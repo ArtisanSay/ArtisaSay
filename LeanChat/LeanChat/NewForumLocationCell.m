@@ -20,4 +20,15 @@
     // Configure the view for the selected state
 }
 
+- (void)updateContent:(NSString *)allow {
+    if([allow integerValue] == 1){
+        _locationImgView.image = [UIImage imageNamed:@"home_18"];
+        self.locationLabel.text = @"使用定位";
+        
+    }else {
+        _locationImgView.image = [UIImage imageNamed:@"issue_10"];
+        self.locationLabel.text = @"没有显示";
+    }
+}
+
 @end

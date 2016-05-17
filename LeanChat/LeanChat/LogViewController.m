@@ -170,12 +170,13 @@
      WJHomeViewController *homeViewController = [[WJHomeViewController alloc] init];
      WJSchoolViewController *schoolCityViewController = [[WJSchoolViewController alloc] init];
      CDConvsVC *messageViewController = [[CDConvsVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:messageViewController];
     
     UIStoryboard *personStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     WJPersonViewController *personViewController = [personStoryboard instantiateViewControllerWithIdentifier:@"Person"];
     
      UITabBarController *tabbarController = [[UITabBarController alloc] init];
-     tabbarController.viewControllers = @[homeViewController, schoolCityViewController, messageViewController, personViewController];
+     tabbarController.viewControllers = @[homeViewController, schoolCityViewController, nav, personViewController];
      
      [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
      [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];

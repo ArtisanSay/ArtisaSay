@@ -30,7 +30,6 @@
 - (void)startGetLocation
 {
     //Check if the locationServices is Enabled
-    
     if ([CLLocationManager locationServicesEnabled]) {
         if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
             if ([[self locationManager] respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
@@ -52,7 +51,6 @@
     }
     return _locationManager;
 }
-
 
 #pragma mark - CLLocationManagerDelegate
 

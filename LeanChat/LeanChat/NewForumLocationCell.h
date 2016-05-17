@@ -12,4 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *locationImgView;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
+- (void)updateContent:(NSString *)allow;
+
 @end

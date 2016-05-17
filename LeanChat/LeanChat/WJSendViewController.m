@@ -35,7 +35,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19], NSForegroundColorAttributeName:[UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]}];
     self.view.backgroundColor = [UIColor colorWithRed:236/255.0 green:237/255.0 blue:237/255.0 alpha:1];
 #pragma - mark 调用定位
-    //[[CheckLocation sharedManager] startGetLocation];
+    [[CheckLocation sharedManager] startGetLocation];
     
     _mutablePhoto = [NSMutableArray array];
     _infoDic = [NSMutableDictionary dictionaryWithDictionary:@{@"forumContent":@"", @"locationStr":@"", @"isAllowLocation":@"0",@"picture":@[]}];
@@ -96,9 +96,17 @@
     _toolBar.frame=rect;
     [UIView commitAnimations];
 }
+#pragma - mark 定位
 - (void)locationBarBtn{
-    
+    if([[_infoDic objectForKey:@"isAllowLocation"] integerValue] == 0){
+        [_infoDic setObject:@"1" forKey:@"isAllowLocation"];
+    }else {
+        [[CheckLocation sharedManager] startGetLocation];
+        [_infoDic setObject:@"0" forKey:@"isAllowLocation"];
+    }
+    [self.myTableView reloadData];
 }
+
 #pragma - mark 发送图片
 - (void)sendPhotoBarBtn{
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:nil];
@@ -283,6 +291,12 @@
     if (indexPath.section == 2) {
         NewForumLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewForumLocationCell"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell updateContent:[_infoDic objectForKey:@"isAllowLocation"]];
+        if([[_infoDic objectForKey:@"isAllowLocation"] integerValue] == 0){
+            cell.locationLabel.text = [_infoDic objectForKey:@"locationStr"];
+        }else{
+            cell.locationLabel.text = @"点击使用地理位置";
+        }
         return cell;
     }
     return cell;
