@@ -10,6 +10,7 @@
 #import "AppShare.h"
 #import "NewForumContentCell.h"
 #import "NewForumImagesCell.h"
+#import "NewForumLocationCell.h"
 //#import "SSPictureViewer.h"
 
 @interface WJSendViewController ()<UITextFieldDelegate,UITextViewDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate, TZImagePickerControllerDelegate,CustomPickerViewDelegate>
@@ -26,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     _selectedPhotos = [NSMutableArray array];
     [self configTableView];
@@ -80,6 +82,7 @@
     
     [self.myTableView registerNib:[UINib nibWithNibName:@"NewForumContentCell" bundle:nil] forCellReuseIdentifier:@"NewForumContentCell"];
     [self.myTableView registerNib:[UINib nibWithNibName:@"NewForumImagesCell" bundle:nil] forCellReuseIdentifier:@"NewForumImagesCell"];
+    [self.myTableView registerNib:[UINib nibWithNibName:@"NewForumLocationCell" bundle:nil] forCellReuseIdentifier:@"NewForumLocationCell"];
 }
 
 #pragma - mark 监听键盘，自动改变ToolBar高度
@@ -187,7 +190,6 @@
         if (_mutablePhoto.count > 0) {
             [self uploadImageBeforCreate];
         }
-
     }
 }
 - (void)remindUserAboutNewWithoutImages {
@@ -216,23 +218,27 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         return 140;
     }
-    CGFloat height = 0;
-    CGFloat itemHeight = (SCREEN_WIDTH - 2 * 4 - 4) / 3 - 4;
-    if(_selectedPhotos.count <= 3){
+    if (indexPath.section == 1){
+        CGFloat height = 0;
+        CGFloat itemHeight = (SCREEN_WIDTH - 2 * 4 - 4) / 3 - 4;
+        if(_selectedPhotos.count <= 3){
             height = itemHeight;
+        }
+        else if(_selectedPhotos.count%3 != 0){
+            height = (_selectedPhotos.count/3 + 1) *itemHeight;
+        }else {
+            height = (_selectedPhotos.count/3) *itemHeight;
+        }
+        return height;
     }
-    else if(_selectedPhotos.count%3 != 0){
-        height = (_selectedPhotos.count/3 + 1) *itemHeight;
-    }else {
-        height = (_selectedPhotos.count/3) *itemHeight;
-    }
-    return height;
+    return 50;
+    
 }
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 //    if(section == 0){
@@ -272,6 +278,11 @@
 //            [self presentViewController:viewer animated:YES completion:nil];
         };
     }
+        return cell;
+    }
+    if (indexPath.section == 2) {
+        NewForumLocationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewForumLocationCell"];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     return cell;

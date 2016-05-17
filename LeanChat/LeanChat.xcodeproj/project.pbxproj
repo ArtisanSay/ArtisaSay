@@ -15,6 +15,8 @@
 		181BED4D1CEAB8FF00B87350 /* scanscanBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 181BED451CEAB8FF00B87350 /* scanscanBg.png */; };
 		181BED4E1CEAB8FF00B87350 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BED471CEAB8FF00B87350 /* QRCodeReaderView.m */; };
 		181BED511CEAB92E00B87350 /* lhScanQCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BED501CEAB92E00B87350 /* lhScanQCodeViewController.m */; };
+		181BED561CEAEED100B87350 /* NewForumLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BED541CEAEED100B87350 /* NewForumLocationCell.m */; };
+		181BED571CEAEED100B87350 /* NewForumLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181BED551CEAEED100B87350 /* NewForumLocationCell.xib */; };
 		18A728FE1CE9C742002103CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A728F81CE9C742002103CF /* icon.png */; };
 		18A728FF1CE9C742002103CF /* Log1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A728F91CE9C742002103CF /* Log1.png */; };
 		18A729001CE9C742002103CF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A728FA1CE9C742002103CF /* 2.png */; };
@@ -174,6 +176,9 @@
 		181BED471CEAB8FF00B87350 /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderView.m; sourceTree = "<group>"; };
 		181BED4F1CEAB92E00B87350 /* lhScanQCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhScanQCodeViewController.h; sourceTree = "<group>"; };
 		181BED501CEAB92E00B87350 /* lhScanQCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lhScanQCodeViewController.m; sourceTree = "<group>"; };
+		181BED531CEAEED100B87350 /* NewForumLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewForumLocationCell.h; sourceTree = "<group>"; };
+		181BED541CEAEED100B87350 /* NewForumLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewForumLocationCell.m; sourceTree = "<group>"; };
+		181BED551CEAEED100B87350 /* NewForumLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewForumLocationCell.xib; sourceTree = "<group>"; };
 		18A728F81CE9C742002103CF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		18A728F91CE9C742002103CF /* Log1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Log1.png; sourceTree = "<group>"; };
 		18A728FA1CE9C742002103CF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -406,6 +411,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2AFA731C2AADCB00F451BE /* CoreLocation.framework in Frameworks */,
 				9A2AFA7F1C2AB23400F451BE /* UIKit.framework in Frameworks */,
 				9A2AFA6D1C2AADB200F451BE /* SystemConfiguration.framework in Frameworks */,
 				9A2AFA7D1C2AB22500F451BE /* StoreKit.framework in Frameworks */,
@@ -414,7 +420,6 @@
 				9A2AFA6F1C2AADBB00F451BE /* MobileCoreServices.framework in Frameworks */,
 				9A2AFA771C2AB1EA00F451BE /* MediaPlayer.framework in Frameworks */,
 				9A2AFA751C2AB1CE00F451BE /* AVFoundation.framework in Frameworks */,
-				9A2AFA731C2AADCB00F451BE /* CoreLocation.framework in Frameworks */,
 				9A2AFA711C2AADC200F451BE /* CoreTelephony.framework in Frameworks */,
 				1FAD25EBE59E07248BD0F7D5 /* libPods-LeanChat.a in Frameworks */,
 			);
@@ -440,6 +445,18 @@
 			name = "二维码扫描";
 			sourceTree = "<group>";
 		};
+		181BED611CEAF87D00B87350 /* HJLearnChat */ = {
+			isa = PBXGroup;
+			children = (
+				706780071B2363C5002F1413 /* vendor */,
+				7073FC401B14718C006F2692 /* controllers */,
+				7073FC761B14718C006F2692 /* models */,
+				70DC7DA91B2F531F0047B7AB /* manager */,
+				7073FC8C1B14718C006F2692 /* views */,
+			);
+			name = HJLearnChat;
+			sourceTree = "<group>";
+		};
 		18A728F61CE9C719002103CF /* Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +479,9 @@
 				18E50F7C1CEAAAD30020BB7F /* NewForumImagesCell.h */,
 				18E50F7D1CEAAAD30020BB7F /* NewForumImagesCell.m */,
 				18E50F7E1CEAAAD30020BB7F /* NewForumImagesCell.xib */,
+				181BED531CEAEED100B87350 /* NewForumLocationCell.h */,
+				181BED541CEAEED100B87350 /* NewForumLocationCell.m */,
+				181BED551CEAEED100B87350 /* NewForumLocationCell.xib */,
 				18E50F7F1CEAAAD30020BB7F /* WJHomeTableViewCell.h */,
 				18E50F801CEAAAD30020BB7F /* WJHomeTableViewCell.m */,
 				18E50F811CEAAAD30020BB7F /* WJHomeTableViewCell.xib */,
@@ -706,11 +726,7 @@
 				18E50F881CEAAB420020BB7F /* WJCustomer */,
 				18E50F781CEAAAC00020BB7F /* View */,
 				18A728F61CE9C719002103CF /* Image */,
-				706780071B2363C5002F1413 /* vendor */,
-				7073FC401B14718C006F2692 /* controllers */,
-				7073FC761B14718C006F2692 /* models */,
-				70DC7DA91B2F531F0047B7AB /* manager */,
-				7073FC8C1B14718C006F2692 /* views */,
+				181BED611CEAF87D00B87350 /* HJLearnChat */,
 				7073FC271B147048006F2692 /* Images.xcassets */,
 				9ACCE5131C2FFA1600D98916 /* Tool */,
 				7073FC1A1B147048006F2692 /* Supporting Files */,
@@ -1056,6 +1072,7 @@
 				18E50FB21CEAABCA0020BB7F /* preview_original_def@2x.png in Resources */,
 				18E50FAE1CEAABCA0020BB7F /* photo_original_sel@2x.png in Resources */,
 				18E50FAF1CEAABCA0020BB7F /* photo_sel_photoPickerVc@2x.png in Resources */,
+				181BED571CEAEED100B87350 /* NewForumLocationCell.xib in Resources */,
 				18A729021CE9C742002103CF /* guide2.jpg in Resources */,
 				18E50FFC1CEAAD350020BB7F /* WJMessageViewController.xib in Resources */,
 				181BED491CEAB8FF00B87350 /* lightNormal.png in Resources */,
@@ -1157,6 +1174,7 @@
 				7073FCB71B14718C006F2692 /* CDEntryVC.m in Sources */,
 				703B392E1B74890100E649DC /* CDSNSView.m in Sources */,
 				18E50F941CEAAB780020BB7F /* JHCustomMenu.m in Sources */,
+				181BED561CEAEED100B87350 /* NewForumLocationCell.m in Sources */,
 				18E50FCA1CEAABDD0020BB7F /* TZAssetModel.m in Sources */,
 				18A729251CE9C803002103CF /* RetrievePswViewController.m in Sources */,
 				7073FCD71B14718C006F2692 /* CDResizableButton.m in Sources */,

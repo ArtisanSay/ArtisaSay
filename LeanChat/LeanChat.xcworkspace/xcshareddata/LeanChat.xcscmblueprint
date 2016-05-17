@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA3ADD4F8860D8C62F6BDB4DF37D5755CF92D01E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8ACFE5037BBA7C3DB34C943CA65881B264CE6E1A" : 0,
+    "3FB232A6DFBF51988CE8982F113F876CD542B7BC" : 0,
+    "BA3ADD4F8860D8C62F6BDB4DF37D5755CF92D01E" : 0,
+    "C56E8E3043E23A7A175E97C5527406C7FCE68265" : 0,
+    "DA5CD478A45D10A35DB1DA512F005720ADC755E7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E2131223-B73E-4FF4-9C98-2CF3F05445CD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8ACFE5037BBA7C3DB34C943CA65881B264CE6E1A" : "",
+    "3FB232A6DFBF51988CE8982F113F876CD542B7BC" : "leanchat",
+    "BA3ADD4F8860D8C62F6BDB4DF37D5755CF92D01E" : "ArtisaSay\/",
+    "C56E8E3043E23A7A175E97C5527406C7FCE68265" : "iOS",
+    "DA5CD478A45D10A35DB1DA512F005720ADC755E7" : "ios\/LZConversationCell"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LeanChat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LeanChat\/LeanChat.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lzwjava\/leanchat-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FB232A6DFBF51988CE8982F113F876CD542B7BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:avoscloud\/avoscloud-demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8ACFE5037BBA7C3DB34C943CA65881B264CE6E1A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ArtisanSay\/ArtisaSay.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA3ADD4F8860D8C62F6BDB4DF37D5755CF92D01E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:avoscloud\/iOS-SDK-demos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C56E8E3043E23A7A175E97C5527406C7FCE68265"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lzwjava\/LZConversationCell.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA5CD478A45D10A35DB1DA512F005720ADC755E7"
+    }
+  ]
+}
