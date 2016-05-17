@@ -1,0 +1,35 @@
+PODS:
+  - AVOSCloud (3.2.9)
+  - AVOSCloudIM (3.2.9):
+    - AVOSCloud
+  - CYLDeallocBlockExecutor (1.0.0)
+  - DateTools (1.5.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - JSBadgeView (1.4.1)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+
+DEPENDENCIES:
+  - AVOSCloud
+  - AVOSCloudIM
+  - CYLDeallocBlockExecutor
+  - DateTools (= 1.5.0)
+  - FMDB (= 2.5)
+  - JSBadgeView (= 1.4.1)
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  AVOSCloud: b020009b1f2e35c271d4d019075458c879fc1d21
+  AVOSCloudIM: c70e31bfee8a0b52c8236e657414cf56bafc8796
+  CYLDeallocBlockExecutor: 13dc997661100052ed24bb918fcc65e8535af59d
+  DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+
+COCOAPODS: 0.39.0
