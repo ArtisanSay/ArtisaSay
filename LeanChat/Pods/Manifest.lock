@@ -1,0 +1,121 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AVOSCloud (3.2.9)
+  - AVOSCloudCrashReporting (3.2.9):
+    - AVOSCloud
+  - AVOSCloudIM (3.2.9):
+    - AVOSCloud
+  - CYLDeallocBlockExecutor (1.0.0)
+  - CYLTabBarController (1.4.1)
+  - DateTools (1.5.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - FXForms (1.2.13)
+  - iRate (1.11.4)
+  - iVersion (1.11.4)
+  - JSBadgeView (1.4.1)
+  - LeanChatLib (0.3.6):
+    - AVOSCloud
+    - AVOSCloudIM
+    - CYLDeallocBlockExecutor
+    - DateTools (= 1.5.0)
+    - FMDB (= 2.5)
+    - JSBadgeView (= 1.4.1)
+    - SDWebImage
+  - LeanCloudFeedback (0.1.1):
+    - AVOSCloud
+  - LeanCloudSocial (0.0.7):
+    - AFNetworking (~> 2.0)
+    - AVOSCloud (~> 3.1)
+  - LZAlertViewHelper (0.0.2)
+  - LZMembersCell (0.0.2)
+  - Masonry (1.0.0)
+  - MBProgressHUD (0.9.1)
+  - MJRefresh (3.1.0)
+  - OpenShare (0.0.1)
+  - pop (1.0.9)
+  - PopMenu (2.4):
+    - pop
+    - XHRealTimeBlur
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - XHRealTimeBlur (1.7)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.5.4)
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
+  - CYLTabBarController
+  - FXForms (= 1.2.13)
+  - iRate (= 1.11.4)
+  - iVersion (= 1.11.4)
+  - JSBadgeView (= 1.4.1)
+  - LeanChatLib (from `../`)
+  - LeanCloudFeedback
+  - LeanCloudSocial (= 0.0.7)
+  - LZAlertViewHelper (= 0.0.2)
+  - LZMembersCell (= 0.0.2)
+  - Masonry
+  - MBProgressHUD (= 0.9.1)
+  - MJRefresh
+  - OpenShare (= 0.0.1)
+  - PopMenu (= 2.4)
+  - SDWebImage
+
+EXTERNAL SOURCES:
+  LeanChatLib:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AVOSCloud: b020009b1f2e35c271d4d019075458c879fc1d21
+  AVOSCloudCrashReporting: a3087633af4cc319600a0698d388b6ac3005859b
+  AVOSCloudIM: c70e31bfee8a0b52c8236e657414cf56bafc8796
+  CYLDeallocBlockExecutor: 13dc997661100052ed24bb918fcc65e8535af59d
+  CYLTabBarController: dbe19e17903b2343c0511263d8f5ccc4a83aa5fc
+  DateTools: b93a2c2017747329c6077c7d7e8a75106e23d0d7
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  FXForms: 22d5ceafd8ca44d2f2be4827afcf00aaf80184a5
+  iRate: 599ed07c854e0695f3c605d1b2a64c67d912acb7
+  iVersion: 2b6ffe708672cb494ba3cab150a94800c2892e81
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  LeanChatLib: aa357c0b99741256a42e31f7d3d07a4d1ef9c68e
+  LeanCloudFeedback: 686305ea196931c7eae49800c384e42d78408482
+  LeanCloudSocial: a20bb54efe77e66263d9943609a36896989af175
+  LZAlertViewHelper: 9f304f25506f3e8582ab17184502543412b82a03
+  LZMembersCell: d7784a5fdd6d5b0b255efe2ff962930c5bf177a0
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
+
+COCOAPODS: 0.39.0
