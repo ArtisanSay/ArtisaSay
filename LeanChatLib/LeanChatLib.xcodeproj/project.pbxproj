@@ -2204,6 +2204,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17399E3F0CF64CDBC4F04433 /* Pods-LeanChatLib.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ibambooooo@gmail.com (DGLFP5H3ZY)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2222,6 +2223,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75B439E10F3C0CBFA1066753 /* Pods-LeanChatLib.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: ibambooooo@gmail.com (DGLFP5H3ZY)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

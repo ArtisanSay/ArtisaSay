@@ -11,6 +11,7 @@
 @interface NewForumLocationCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *locationImgView;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (nonatomic) BOOL isAllowUseLocation;
 
 - (void)updateContent:(NSString *)allow;
 

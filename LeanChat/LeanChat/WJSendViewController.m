@@ -295,12 +295,32 @@
         if([[_infoDic objectForKey:@"isAllowLocation"] integerValue] == 0){
             cell.locationLabel.text = [_infoDic objectForKey:@"locationStr"];
         }else{
-            cell.locationLabel.text = @"点击使用地理位置";
+            cell.locationLabel.text = @"使用地理位置";
         }
         return cell;
     }
     return cell;
 }
+
+#pragma mark - Notification
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getMyLocation:) name:K_NOTIFICATION_LOCATION_GET object:nil];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:K_NOTIFICATION_LOCATION_GET object:nil];
+}
+
+- (void)getMyLocation:(NSNotification *)noti {
+    NSDictionary *dic = noti.userInfo;
+    NewForumLocationCell *cell = (NewForumLocationCell *)[_myTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:2]];
+    CLPlacemark *place = [dic objectForKey:@"placemark"];
+    NSString *locationStr = place.name;
+    [_infoDic setObject:locationStr forKey:@"locationStr"];
+    cell.locationLabel.text = place.name;
+}
+
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
