@@ -47,7 +47,7 @@
     if (_locationManager == nil) {
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
-        _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
     }
     return _locationManager;
 }
