@@ -36,6 +36,7 @@
 #import "CDAppDelegate.h"
 #import "CDConvsVC.h"
 @interface LogViewController ()<LLTabBarDelegate, UIActionSheetDelegate>
+@property (nonatomic, strong) CDLoginVC *loginVC;
 
 @end
 
@@ -43,58 +44,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     
-     [CDAddRequest registerSubclass];
-     [CDAbuseReport registerSubclass];
-     #if USE_US
-     [AVOSCloud useAVCloudUS];
-     #endif
-     
-     // Enable Crash Reporting
-     [AVOSCloudCrashReporting enable];
-     //希望能提供更详细的日志信息，打开日志的方式是在 AVOSCloud 初始化语句之后加上下面这句：
-     
-     //Objective-C
-     #ifndef __OPTIMIZE__
-     [AVOSCloud setAllLogsEnabled:YES];
-     #endif
-     
-     [AVOSCloud setApplicationId:AVOSAppID clientKey:AVOSAppKey];
-     //    [AVOSCloud setApplicationId:CloudAppId clientKey:CloudAppKey];
-     //    [AVOSCloud setApplicationId:PublicAppId clientKey:PublicAppKey];
-     
-     [AVOSCloud setLastModifyEnabled:YES];
-     
-     if (SYSTEM_VERSION >= 7.0) {
-     [[UINavigationBar appearance] setBarTintColor:NAVIGATION_COLOR];
-     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-     }
-     else {
-     [[UINavigationBar appearance] setTintColor:NAVIGATION_COLOR];
-     }
-     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-     [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
-    CDAppDelegate *app = [UIApplication sharedApplication].delegate;
-     app.window.backgroundColor = [UIColor whiteColor];
-     [app.window makeKeyAndVisible];
-     
-     if ([AVUser currentUser]) {
-     // Applications are expected to have a root view controller at the end of application launch
-     app.window.rootViewController = [[UIViewController alloc] init];
-     [self toMain];
-     }
-     else {
-     [self toLogin];
-     }
-     [[LZPushManager manager] registerForRemoteNotification];
-     
-     //[AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-     [self initAnalytics];
-     
-     #ifdef DEBUG
-     [AVPush setProductionMode:NO];  // 如果要测试申请好友是否有推送，请设置为 YES
-     //    [AVOSCloud setAllLogsEnabled:YES];
-     #endif
+    
+};
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [CDAddRequest registerSubclass];
+    [CDAbuseReport registerSubclass];
+#if USE_US
+    [AVOSCloud useAVCloudUS];
+#endif
+    
+    // Enable Crash Reporting
+    [AVOSCloudCrashReporting enable];
+    //希望能提供更详细的日志信息，打开日志的方式是在 AVOSCloud 初始化语句之后加上下面这句：
+    
+    //Objective-C
+#ifndef __OPTIMIZE__
+    [AVOSCloud setAllLogsEnabled:YES];
+#endif
+    [AVOSCloud setApplicationId:@"x3o016bxnkpyee7e9pa5pre6efx2dadyerdlcez0wbzhw25g" clientKey:@"057x24cfdzhffnl3dzk14jh9xo2rq6w1hy1fdzt5tv46ym78"];
+    //    [AVOSCloud setApplicationId:CloudAppId clientKey:CloudAppKey];
+    //    [AVOSCloud setApplicationId:PublicAppId clientKey:PublicAppKey];
+    
+    [AVOSCloud setLastModifyEnabled:YES];
+    
+    if (SYSTEM_VERSION >= 7.0) {
+        [[UINavigationBar appearance] setBarTintColor:NAVIGATION_COLOR];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    }
+    else {
+        [[UINavigationBar appearance] setTintColor:NAVIGATION_COLOR];
+    }
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
+    
+    if ([AVUser currentUser]) {
+        // Applications are expected to have a root view controller at the end of application launch
+        [self toMain];
+    }
+    else {
+        [self toLogin];
+    }
+    
+    [[LZPushManager manager] registerForRemoteNotification];
+    
+    //[AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [self initAnalytics];
+    
+#ifdef DEBUG
+    [AVPush setProductionMode:NO];  // 如果要测试申请好友是否有推送，请设置为 YES
+    //    [AVOSCloud setAllLogsEnabled:YES];
+#endif
+
 }
 - (void)initAnalytics {
     [AVAnalytics setAnalyticsEnabled:YES];
@@ -107,17 +108,16 @@
     NSDictionary *configParams = [AVAnalytics getConfigParams];
     DLog(@"configParams: %@", configParams);
 }
-
 - (void)toLogin {
-//    self.loginVC = [[CDLoginVC alloc] init];
-//    self.window.rootViewController = self.loginVC;
+    self.loginVC = [[CDLoginVC alloc] init];
+    //self.window.rootViewController = self.loginVC;
 }
 
 - (void)toMain{
-    [iRate sharedInstance].applicationBundleID = @"com.avoscloud.leanchat";
+    [iRate sharedInstance].applicationBundleID = @"com.artisanSay";
     [iRate sharedInstance].onlyPromptIfLatestVersion = NO;
     [iRate sharedInstance].previewMode = NO;
-    [iVersion sharedInstance].applicationBundleID = @"com.avoscloud.leanchat";
+    [iVersion sharedInstance].applicationBundleID = @"com.artisanSay";
     [iVersion sharedInstance].previewMode = NO;
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
@@ -125,7 +125,7 @@
     [CDChatManager manager].userDelegate = [CDIMService service];
     
 #ifdef DEBUG
-//#warning 使用开发证书来推送，方便调试，具体可看这个变量的定义处
+// #warning 使用开发证书来推送，方便调试，具体可看这个变量的定义处
     [CDChatManager manager].useDevPushCerticate = YES;
 #endif
     
@@ -134,9 +134,8 @@
     [[CDChatManager manager] openWithClientId:[AVUser currentUser].objectId callback: ^(BOOL succeeded, NSError *error) {
         [self hideProgress];
         if (succeeded) {
-            CYLTabBarControllerConfig *tabBarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
-            CDAppDelegate *app = [UIApplication sharedApplication].delegate;
-            app.window.rootViewController = tabBarControllerConfig.tabBarController;
+            //CYLTabBarControllerConfig *tabBarControllerConfig = [[CYLTabBarControllerConfig alloc] init];
+            //self.window.rootViewController = tabBarControllerConfig.tabBarController;
         } else {
             [self toLogin];
             DLog(@"%@", error);
@@ -148,22 +147,22 @@
 - (void)toast:(NSString *)text duration:(NSTimeInterval)duration {
     [AVAnalytics event:@"toast" attributes:@{@"text": text}];
     
-//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.window animated:YES];
-//       hud.labelText=text;
-//    hud.detailsLabelFont = [UIFont systemFontOfSize:14];
-//    hud.detailsLabelText = text;
-//    hud.margin = 10.f;
-//    hud.removeFromSuperViewOnHide = YES;
-//    hud.mode = MBProgressHUDModeIndeterminate;
-//    [hud hide:YES afterDelay:duration];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //    hud.labelText=text;
+    hud.detailsLabelFont = [UIFont systemFontOfSize:14];
+    hud.detailsLabelText = text;
+    hud.margin = 10.f;
+    hud.removeFromSuperViewOnHide = YES;
+    hud.mode = MBProgressHUDModeIndeterminate;
+    [hud hide:YES afterDelay:duration];
 }
 
 -(void)showProgress {
-    //[MBProgressHUD showHUDAddedTo:self.window animated:YES];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
 
 -(void)hideProgress {
-    //[MBProgressHUD hideHUDForView:self.window animated:YES];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 - (IBAction)goToLog:(id)sender {

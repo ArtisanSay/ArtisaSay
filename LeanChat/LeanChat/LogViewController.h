@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LogViewController : UIViewController
-- (void)toMain;
-- (void)toLogin;
+
 @end

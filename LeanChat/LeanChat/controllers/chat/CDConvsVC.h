@@ -9,5 +9,6 @@
 #import <LeanChatLib/CDChatListVC.h>
 
 @interface CDConvsVC : CDChatListVC
-
+- (void)toMain;
+- (void)toLogin;
 @end

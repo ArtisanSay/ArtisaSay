@@ -9,8 +9,13 @@
 #import "CDConvsVC.h"
 #import "CDUtils.h"
 #import "CDIMService.h"
+#import "CDFriendListVC.h"
 
 @interface CDConvsVC ()<CDChatListVCDelegate>
+{
+    CDFriendListVC *friendListVC;
+    UIBarButtonItem *friendListItem;
+}
 
 @end
 
@@ -27,8 +32,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.chatListDelegate = self;
+    UIButton *friendListButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 60)];
+    friendListButton.titleLabel.font = [UIFont systemFontOfSize:12];
+    //[friendListButton setImage:[UIImage imageNamed:@"add.png"] forState:UIControlStateNormal];
+    [friendListButton setTitle:@"通讯录" forState:UIControlStateNormal];
+    [friendListButton addTarget:self action:@selector(friendListAction) forControlEvents:UIControlEventTouchUpInside];
+    friendListItem = [[UIBarButtonItem alloc] initWithCustomView:friendListButton];
+    self.navigationItem.rightBarButtonItem = friendListItem;
 }
 
+//压栈到好友列表
+- (void)friendListAction{
+    friendListVC = [[CDFriendListVC alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:friendListVC animated:YES];
+}
 #pragma mark - CDChatListVCDelegate
 
 - (void)viewController:(UIViewController *)viewController didSelectConv:(AVIMConversation *)conv {
