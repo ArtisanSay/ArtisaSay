@@ -11,7 +11,7 @@
 #import "LLTabBarItem.h"
 #import "WJHomeViewController.h"
 #import "WJSchoolViewController.h"
-#import "WJSaleViewController.h"
+//#import "WJSaleViewController.h"
 #import "WJMessageViewController.h"
 #import "LogAndRegViewController.h"
 #import "JHCustomMenu.h"

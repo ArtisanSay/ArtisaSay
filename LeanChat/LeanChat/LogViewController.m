@@ -13,7 +13,7 @@
 #import "RegViewController.h"
 #import "WJHomeViewController.h"
 #import "WJSchoolViewController.h"
-#import "WJSaleViewController.h"
+//#import "WJSaleViewController.h"
 #import "WJMessageViewController.h"
 #import "WJPersonViewController.h"
 #import "RetrievePswViewController.h"
@@ -34,7 +34,9 @@
 #import "MBProgressHUD.h"
 #import "CDAppDelegate.h"
 #import "CDConvsVC.h"
-
+#import "SalingViewController.h"
+#import "IssueViewController.h"
+#import "MySaleViewController.h"
 @interface LogViewController ()<LLTabBarDelegate, UIActionSheetDelegate>
 @property (nonatomic, strong) CDLoginVC *loginVC;
 
@@ -69,11 +71,11 @@
     [AVOSCloud setLastModifyEnabled:YES];
     
     if (SYSTEM_VERSION >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:NAVIGATION_COLOR];
+        [[UINavigationBar appearance] setBarTintColor:[UIColor lightGrayColor]];
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     }
     else {
-        [[UINavigationBar appearance] setTintColor:NAVIGATION_COLOR];
+        [[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
     }
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                           [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
@@ -168,6 +170,7 @@
 - (IBAction)goToLog:(id)sender {
      WJHomeViewController *homeViewController = [[WJHomeViewController alloc] init];
      WJSchoolViewController *schoolCityViewController = [[WJSchoolViewController alloc] init];
+    
      CDConvsVC *messageViewController = [[CDConvsVC alloc] init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:messageViewController];
     
@@ -175,7 +178,7 @@
     WJPersonViewController *personViewController = [personStoryboard instantiateViewControllerWithIdentifier:@"Person"];
     
      UITabBarController *tabbarController = [[UITabBarController alloc] init];
-     tabbarController.viewControllers = @[homeViewController, schoolCityViewController, nav, personViewController];
+     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,nav, personViewController];
      
      [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
      [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
@@ -249,12 +252,30 @@
 #pragma mark - LLTabBarDelegate
 
 - (void)tabBarDidSelectedRiseButton {
-
-    CDAppDelegate *app = (CDAppDelegate *)[UIApplication sharedApplication].delegate;
-    UIStoryboard *saleStoryboard = [UIStoryboard storyboardWithName:@"Sale" bundle:nil];
-    WJSaleViewController *saleViewController = [saleStoryboard instantiateViewControllerWithIdentifier:@"Sale"];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:saleViewController];
-    app.window.rootViewController = nav;
+    SalingViewController *salingViewController = [[SalingViewController alloc] init];
+    UINavigationController *navSalingViewController = [[UINavigationController alloc] initWithRootViewController:salingViewController];
+    
+    [navSalingViewController setTitle:@"拍卖"];
+    [navSalingViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction_42"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction2_42"]];
+    navSalingViewController.tabBarItem.title = @"拍卖中";
+    
+    
+    IssueViewController *issueViewController = [[IssueViewController alloc] init];
+    UINavigationController *navIssueViewController = [[UINavigationController alloc] initWithRootViewController:issueViewController];
+    [navIssueViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction2_44"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction_44"]];
+    navIssueViewController.tabBarItem.title = @"发布";
+    
+    MySaleViewController *mySaleViewController = [[MySaleViewController alloc] init];
+    UINavigationController *navMySaleViewController = [[UINavigationController alloc] initWithRootViewController:mySaleViewController];
+    navMySaleViewController.tabBarItem.title = @"我的";
+    [navMySaleViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction2_47"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction_47"]];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0 green:187/255.f blue:153/255.f alpha:1]];
+    //创建tabBarController
+    UITabBarController *tabbarController = [[UITabBarController alloc] init];
+    tabbarController.viewControllers = @[navSalingViewController,navIssueViewController, navMySaleViewController];
+    CDAppDelegate *app = [UIApplication sharedApplication ].delegate;
+    app.window.rootViewController = tabbarController;
 }
 
 - (void)didReceiveMemoryWarning {

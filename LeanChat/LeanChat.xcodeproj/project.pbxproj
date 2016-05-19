@@ -38,6 +38,12 @@
 		18A729271CE9C803002103CF /* AlertPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A7291B1CE9C803002103CF /* AlertPswViewController.m */; };
 		18A729281CE9C803002103CF /* AlertPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A7291C1CE9C803002103CF /* AlertPswViewController.xib */; };
 		18A729B51CE9C960002103CF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A729B41CE9C960002103CF /* Launch Screen.storyboard */; };
+		18B814B31CED6B8700240826 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814B11CED6B8700240826 /* IssueViewController.m */; };
+		18B814B41CED6B8700240826 /* IssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B814B21CED6B8700240826 /* IssueViewController.xib */; };
+		18B814B81CED6D2F00240826 /* SalingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814B61CED6D2F00240826 /* SalingViewController.m */; };
+		18B814B91CED6D2F00240826 /* SalingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B814B71CED6D2F00240826 /* SalingViewController.xib */; };
+		18B814BD1CED6E0100240826 /* MySaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814BB1CED6E0100240826 /* MySaleViewController.m */; };
+		18B814BE1CED6E0100240826 /* MySaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B814BC1CED6E0100240826 /* MySaleViewController.xib */; };
 		18E50F821CEAAAD30020BB7F /* NewForumContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50F7A1CEAAAD30020BB7F /* NewForumContentCell.m */; };
 		18E50F831CEAAAD30020BB7F /* NewForumContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50F7B1CEAAAD30020BB7F /* NewForumContentCell.xib */; };
 		18E50F841CEAAAD30020BB7F /* NewForumImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50F7D1CEAAAD30020BB7F /* NewForumImagesCell.m */; };
@@ -82,7 +88,6 @@
 		18E50FEA1CEAACDA0020BB7F /* WJSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FE71CEAACDA0020BB7F /* WJSendViewController.m */; };
 		18E50FEF1CEAACFD0020BB7F /* WJSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FED1CEAACFD0020BB7F /* WJSchoolViewController.m */; };
 		18E50FF01CEAACFD0020BB7F /* WJSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FEE1CEAACFD0020BB7F /* WJSchoolViewController.xib */; };
-		18E50FF51CEAAD110020BB7F /* WJSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */; };
 		18E50FFB1CEAAD350020BB7F /* WJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FF91CEAAD350020BB7F /* WJMessageViewController.m */; };
 		18E50FFC1CEAAD350020BB7F /* WJMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */; };
 		18E510001CEAAD4C0020BB7F /* WJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FFF1CEAAD4C0020BB7F /* WJPersonViewController.m */; };
@@ -207,6 +212,15 @@
 		18A7291B1CE9C803002103CF /* AlertPswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertPswViewController.m; sourceTree = "<group>"; };
 		18A7291C1CE9C803002103CF /* AlertPswViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertPswViewController.xib; sourceTree = "<group>"; };
 		18A729B41CE9C960002103CF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		18B814B01CED6B8700240826 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
+		18B814B11CED6B8700240826 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
+		18B814B21CED6B8700240826 /* IssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueViewController.xib; sourceTree = "<group>"; };
+		18B814B51CED6D2F00240826 /* SalingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalingViewController.h; sourceTree = "<group>"; };
+		18B814B61CED6D2F00240826 /* SalingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalingViewController.m; sourceTree = "<group>"; };
+		18B814B71CED6D2F00240826 /* SalingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalingViewController.xib; sourceTree = "<group>"; };
+		18B814BA1CED6E0100240826 /* MySaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySaleViewController.h; sourceTree = "<group>"; };
+		18B814BB1CED6E0100240826 /* MySaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySaleViewController.m; sourceTree = "<group>"; };
+		18B814BC1CED6E0100240826 /* MySaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySaleViewController.xib; sourceTree = "<group>"; };
 		18E50F791CEAAAD30020BB7F /* NewForumContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewForumContentCell.h; sourceTree = "<group>"; };
 		18E50F7A1CEAAAD30020BB7F /* NewForumContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewForumContentCell.m; sourceTree = "<group>"; };
 		18E50F7B1CEAAAD30020BB7F /* NewForumContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewForumContentCell.xib; sourceTree = "<group>"; };
@@ -274,8 +288,6 @@
 		18E50FEC1CEAACFD0020BB7F /* WJSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSchoolViewController.h; sourceTree = "<group>"; };
 		18E50FED1CEAACFD0020BB7F /* WJSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSchoolViewController.m; sourceTree = "<group>"; };
 		18E50FEE1CEAACFD0020BB7F /* WJSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSchoolViewController.xib; sourceTree = "<group>"; };
-		18E50FF21CEAAD110020BB7F /* WJSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSaleViewController.h; sourceTree = "<group>"; };
-		18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSaleViewController.m; sourceTree = "<group>"; };
 		18E50FF81CEAAD350020BB7F /* WJMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJMessageViewController.h; sourceTree = "<group>"; };
 		18E50FF91CEAAD350020BB7F /* WJMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJMessageViewController.m; sourceTree = "<group>"; };
 		18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJMessageViewController.xib; sourceTree = "<group>"; };
@@ -622,8 +634,15 @@
 		18E50FF11CEAAD010020BB7F /* Sale */ = {
 			isa = PBXGroup;
 			children = (
-				18E50FF21CEAAD110020BB7F /* WJSaleViewController.h */,
-				18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */,
+				18B814B51CED6D2F00240826 /* SalingViewController.h */,
+				18B814B61CED6D2F00240826 /* SalingViewController.m */,
+				18B814B71CED6D2F00240826 /* SalingViewController.xib */,
+				18B814B01CED6B8700240826 /* IssueViewController.h */,
+				18B814B11CED6B8700240826 /* IssueViewController.m */,
+				18B814B21CED6B8700240826 /* IssueViewController.xib */,
+				18B814BA1CED6E0100240826 /* MySaleViewController.h */,
+				18B814BB1CED6E0100240826 /* MySaleViewController.m */,
+				18B814BC1CED6E0100240826 /* MySaleViewController.xib */,
 			);
 			name = Sale;
 			sourceTree = "<group>";
@@ -1059,12 +1078,15 @@
 				7073FCBB1B14718C006F2692 /* CDAddFriendVC.xib in Resources */,
 				18E50F831CEAAAD30020BB7F /* NewForumContentCell.xib in Resources */,
 				18A729241CE9C803002103CF /* RegViewController.xib in Resources */,
+				18B814B41CED6B8700240826 /* IssueViewController.xib in Resources */,
 				18E50FA81CEAABCA0020BB7F /* MMVideoPreviewPlayHL@2x.png in Resources */,
 				18A729081CE9C74B002103CF /* Main.storyboard in Resources */,
+				18B814BE1CED6E0100240826 /* MySaleViewController.xib in Resources */,
 				18A729001CE9C742002103CF /* 2.png in Resources */,
 				181BED481CEAB8FF00B87350 /* noticeMusic.wav in Resources */,
 				18E50FAB1CEAABCA0020BB7F /* photo_def_previewVc@2x.png in Resources */,
 				18A729031CE9C742002103CF /* guide3.jpg in Resources */,
+				18B814B91CED6D2F00240826 /* SalingViewController.xib in Resources */,
 				18E50FAC1CEAABCA0020BB7F /* photo_number_icon@2x.png in Resources */,
 				18A728FE1CE9C742002103CF /* icon.png in Resources */,
 				18E50FB61CEAABCA0020BB7F /* VideoSendIcon@2x.png in Resources */,
@@ -1181,7 +1203,6 @@
 				7073FCD71B14718C006F2692 /* CDResizableButton.m in Sources */,
 				18A7291F1CE9C803002103CF /* RegOneViewController.m in Sources */,
 				7087E77E1B78BF34003641E2 /* CDEntryBaseVC.m in Sources */,
-				18E50FF51CEAAD110020BB7F /* WJSaleViewController.m in Sources */,
 				7073FC1D1B147048006F2692 /* main.m in Sources */,
 				18E50FFB1CEAAD350020BB7F /* WJMessageViewController.m in Sources */,
 				18E50F911CEAAB780020BB7F /* AlbumViewCell.m in Sources */,
@@ -1205,8 +1226,10 @@
 				7087E7771B78B39A003641E2 /* CDPhoneRegisterVC.m in Sources */,
 				7073FCD41B14718C006F2692 /* CDPopMenu.m in Sources */,
 				70DC7DB51B2F531F0047B7AB /* CDUtils.m in Sources */,
+				18B814BD1CED6E0100240826 /* MySaleViewController.m in Sources */,
 				7073FCC21B14718C006F2692 /* AVIMCustomMessage.m in Sources */,
 				7073FCA91B14718C006F2692 /* CDBaseNavC.m in Sources */,
+				18B814B81CED6D2F00240826 /* SalingViewController.m in Sources */,
 				7073FCB21B14718C006F2692 /* CDConvNameVC.m in Sources */,
 				7073FCBE1B14718C006F2692 /* CDNewFriendVC.m in Sources */,
 				18A729211CE9C803002103CF /* LogViewController.m in Sources */,
@@ -1224,6 +1247,7 @@
 				7073FCB41B14718C006F2692 /* CDConvReportAbuseVC.m in Sources */,
 				7092330D1B45299A00E2D1F5 /* CDSettingVC.m in Sources */,
 				18E50FCD1CEAABDD0020BB7F /* TZPhotoPickerController.m in Sources */,
+				18B814B31CED6B8700240826 /* IssueViewController.m in Sources */,
 				18E50FD61CEAAC8F0020BB7F /* AppShare.m in Sources */,
 				18E50FCB1CEAABDD0020BB7F /* TZImageManager.m in Sources */,
 				181BED4E1CEAB8FF00B87350 /* QRCodeReaderView.m in Sources */,
