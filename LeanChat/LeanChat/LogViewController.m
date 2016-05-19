@@ -16,7 +16,6 @@
 #import "WJSaleViewController.h"
 #import "WJMessageViewController.h"
 #import "WJPersonViewController.h"
-//#import "AppDelegate.h"
 #import "RetrievePswViewController.h"
 #import "CDCommon.h"
 #import "CDLoginVC.h"
@@ -35,6 +34,7 @@
 #import "MBProgressHUD.h"
 #import "CDAppDelegate.h"
 #import "CDConvsVC.h"
+
 @interface LogViewController ()<LLTabBarDelegate, UIActionSheetDelegate>
 @property (nonatomic, strong) CDLoginVC *loginVC;
 
@@ -250,9 +250,11 @@
 
 - (void)tabBarDidSelectedRiseButton {
 
-    CDAppDelegate *delegate = (CDAppDelegate *)[UIApplication sharedApplication].delegate;
-    WJSaleViewController *saleViewController = [[WJSaleViewController alloc] init];
-    [delegate.window.rootViewController presentViewController:saleViewController animated:YES completion:nil];
+    CDAppDelegate *app = (CDAppDelegate *)[UIApplication sharedApplication].delegate;
+    UIStoryboard *saleStoryboard = [UIStoryboard storyboardWithName:@"Sale" bundle:nil];
+    WJSaleViewController *saleViewController = [saleStoryboard instantiateViewControllerWithIdentifier:@"Sale"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:saleViewController];
+    app.window.rootViewController = nav;
 }
 
 - (void)didReceiveMemoryWarning {

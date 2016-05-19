@@ -83,10 +83,10 @@
 		18E50FEF1CEAACFD0020BB7F /* WJSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FED1CEAACFD0020BB7F /* WJSchoolViewController.m */; };
 		18E50FF01CEAACFD0020BB7F /* WJSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FEE1CEAACFD0020BB7F /* WJSchoolViewController.xib */; };
 		18E50FF51CEAAD110020BB7F /* WJSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */; };
-		18E50FF61CEAAD110020BB7F /* WJSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FF41CEAAD110020BB7F /* WJSaleViewController.xib */; };
 		18E50FFB1CEAAD350020BB7F /* WJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FF91CEAAD350020BB7F /* WJMessageViewController.m */; };
 		18E50FFC1CEAAD350020BB7F /* WJMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */; };
 		18E510001CEAAD4C0020BB7F /* WJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FFF1CEAAD4C0020BB7F /* WJPersonViewController.m */; };
+		18F0DA2D1CED4D920073390E /* Sale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0DA2C1CED4D920073390E /* Sale.storyboard */; };
 		1FAD25EBE59E07248BD0F7D5 /* libPods-LeanChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D434DB9DF2EFE3DD51B2 /* libPods-LeanChat.a */; };
 		700E6A151B3D2B4E00675021 /* LZPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E6A141B3D2B4E00675021 /* LZPushManager.m */; };
 		703B392E1B74890100E649DC /* CDSNSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 703B392D1B74890100E649DC /* CDSNSView.m */; };
@@ -276,12 +276,12 @@
 		18E50FEE1CEAACFD0020BB7F /* WJSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSchoolViewController.xib; sourceTree = "<group>"; };
 		18E50FF21CEAAD110020BB7F /* WJSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSaleViewController.h; sourceTree = "<group>"; };
 		18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSaleViewController.m; sourceTree = "<group>"; };
-		18E50FF41CEAAD110020BB7F /* WJSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSaleViewController.xib; sourceTree = "<group>"; };
 		18E50FF81CEAAD350020BB7F /* WJMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJMessageViewController.h; sourceTree = "<group>"; };
 		18E50FF91CEAAD350020BB7F /* WJMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJMessageViewController.m; sourceTree = "<group>"; };
 		18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJMessageViewController.xib; sourceTree = "<group>"; };
 		18E50FFE1CEAAD4C0020BB7F /* WJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPersonViewController.h; sourceTree = "<group>"; };
 		18E50FFF1CEAAD4C0020BB7F /* WJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPersonViewController.m; sourceTree = "<group>"; };
+		18F0DA2C1CED4D920073390E /* Sale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sale.storyboard; sourceTree = "<group>"; };
 		4A71AD2EA525F79828723CA0 /* Pods-LeanChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeanChat/Pods-LeanChat.release.xcconfig"; sourceTree = "<group>"; };
 		700E6A131B3D2B4E00675021 /* LZPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushManager.h; sourceTree = "<group>"; };
 		700E6A141B3D2B4E00675021 /* LZPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushManager.m; sourceTree = "<group>"; };
@@ -624,7 +624,6 @@
 			children = (
 				18E50FF21CEAAD110020BB7F /* WJSaleViewController.h */,
 				18E50FF31CEAAD110020BB7F /* WJSaleViewController.m */,
-				18E50FF41CEAAD110020BB7F /* WJSaleViewController.xib */,
 			);
 			name = Sale;
 			sourceTree = "<group>";
@@ -695,7 +694,7 @@
 			children = (
 				906327CF1C508DD100B69415 /* LeanChatLib.xcodeproj */,
 				18A729B41CE9C960002103CF /* Launch Screen.storyboard */,
-				7073FC191B147048006F2692 /* LeanChat */,
+				7073FC191B147048006F2692 /* ArtisanSay */,
 				7073FC181B147048006F2692 /* Products */,
 				D35BDE7D616EEF87BC0C5FA0 /* Pods */,
 				B215B044676D1B59F414465D /* Frameworks */,
@@ -710,7 +709,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7073FC191B147048006F2692 /* LeanChat */ = {
+		7073FC191B147048006F2692 /* ArtisanSay */ = {
 			isa = PBXGroup;
 			children = (
 				7073FCD91B1471A4006F2692 /* CDAppDelegate.h */,
@@ -719,6 +718,7 @@
 				18A729041CE9C74B002103CF /* ViewController.h */,
 				18A729051CE9C74B002103CF /* ViewController.m */,
 				18A729061CE9C74B002103CF /* Main.storyboard */,
+				18F0DA2C1CED4D920073390E /* Sale.storyboard */,
 				181BED3E1CEAB8E300B87350 /* 二维码扫描 */,
 				18E510011CEAADC60020BB7F /* LogAndReg */,
 				18E50FD21CEAAC590020BB7F /* ViewController */,
@@ -731,6 +731,7 @@
 				9ACCE5131C2FFA1600D98916 /* Tool */,
 				7073FC1A1B147048006F2692 /* Supporting Files */,
 			);
+			name = ArtisanSay;
 			path = LeanChat;
 			sourceTree = "<group>";
 		};
@@ -1051,10 +1052,10 @@
 				18A729B51CE9C960002103CF /* Launch Screen.storyboard in Resources */,
 				18E50FA91CEAABCA0020BB7F /* navi_back@2x.png in Resources */,
 				181BED4D1CEAB8FF00B87350 /* scanscanBg.png in Resources */,
-				18E50FF61CEAAD110020BB7F /* WJSaleViewController.xib in Resources */,
 				18A729011CE9C742002103CF /* guide1.jpg in Resources */,
 				18E50FB01CEAABCA0020BB7F /* photo_sel_previewVc@2x.png in Resources */,
 				18E50F871CEAAAD30020BB7F /* WJHomeTableViewCell.xib in Resources */,
+				18F0DA2D1CED4D920073390E /* Sale.storyboard in Resources */,
 				7073FCBB1B14718C006F2692 /* CDAddFriendVC.xib in Resources */,
 				18E50F831CEAAAD30020BB7F /* NewForumContentCell.xib in Resources */,
 				18A729241CE9C803002103CF /* RegViewController.xib in Resources */,
