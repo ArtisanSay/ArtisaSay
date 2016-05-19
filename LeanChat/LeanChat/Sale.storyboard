@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--我的-->
         <scene sceneID="8Tp-VJ-3KQ">
             <objects>
-                <viewController id="eBc-Ce-8Ff" sceneMemberID="viewController">
+                <viewController id="eBc-Ce-8Ff" customClass="MySaleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dc1-S5-ytj"/>
                         <viewControllerLayoutGuide type="bottom" id="NBk-0y-z9h"/>
@@ -16,18 +16,31 @@
                     <view key="view" contentMode="scaleToFill" id="fcb-pG-uvy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapbar_top_line" translatesAutoresizingMaskIntoConstraints="NO" id="wgI-Zd-Hcl">
+                                <rect key="frame" x="0.0" y="613" width="375" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="2AW-ul-lne"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NBk-0y-z9h" firstAttribute="top" secondItem="wgI-Zd-Hcl" secondAttribute="bottom" id="5Nw-VQ-uMM"/>
+                            <constraint firstAttribute="trailing" secondItem="wgI-Zd-Hcl" secondAttribute="trailing" id="DQd-K8-gha"/>
+                            <constraint firstItem="wgI-Zd-Hcl" firstAttribute="leading" secondItem="fcb-pG-uvy" secondAttribute="leading" id="fCv-nB-kNA"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YYF-Ty-tWT"/>
+                    <navigationItem key="navigationItem" title="我的" id="YYF-Ty-tWT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmo-8V-axj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170.5" y="1648.5"/>
+            <point key="canvasLocation" x="-570.5" y="1564.5"/>
         </scene>
-        <!--View Controller-->
+        <!--发布-->
         <scene sceneID="Euv-9s-oci">
             <objects>
-                <viewController id="iaj-Z5-dMk" sceneMemberID="viewController">
+                <viewController id="iaj-Z5-dMk" customClass="IssueViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cf9-uj-xKQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Rxw-4X-daL"/>
@@ -35,19 +48,32 @@
                     <view key="view" contentMode="scaleToFill" id="Pst-Th-hNR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapbar_top_line" translatesAutoresizingMaskIntoConstraints="NO" id="nhi-7m-LEb">
+                                <rect key="frame" x="0.0" y="613" width="375" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="LvH-Mn-iYV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nhi-7m-LEb" firstAttribute="leading" secondItem="Pst-Th-hNR" secondAttribute="leading" id="Apr-oo-TcF"/>
+                            <constraint firstAttribute="trailing" secondItem="nhi-7m-LEb" secondAttribute="trailing" id="MhX-da-KGU"/>
+                            <constraint firstItem="Rxw-4X-daL" firstAttribute="top" secondItem="nhi-7m-LEb" secondAttribute="bottom" id="wFi-0s-zOg"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ols-05-CLr"/>
+                    <navigationItem key="navigationItem" title="发布" id="ols-05-CLr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkR-MA-hmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170.5" y="548.5"/>
+            <point key="canvasLocation" x="117.5" y="1613.5"/>
         </scene>
-        <!--View Controller-->
+        <!--拍卖-->
         <scene sceneID="H5u-zw-Kek">
             <objects>
-                <viewController id="4xt-Pm-pB2" sceneMemberID="viewController">
+                <viewController id="4xt-Pm-pB2" customClass="SalingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q82-Ru-0pT"/>
                         <viewControllerLayoutGuide type="bottom" id="TVZ-Wv-EmA"/>
@@ -55,14 +81,27 @@
                     <view key="view" contentMode="scaleToFill" id="vkU-iF-meJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapbar_top_line" translatesAutoresizingMaskIntoConstraints="NO" id="Fvv-kt-ca7">
+                                <rect key="frame" x="0.0" y="613" width="375" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="b02-05-J13"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fvv-kt-ca7" firstAttribute="leading" secondItem="vkU-iF-meJ" secondAttribute="leading" id="5Wp-to-pa5"/>
+                            <constraint firstItem="TVZ-Wv-EmA" firstAttribute="top" secondItem="Fvv-kt-ca7" secondAttribute="bottom" id="hdR-Eu-NhH"/>
+                            <constraint firstAttribute="trailing" secondItem="Fvv-kt-ca7" secondAttribute="trailing" id="t3r-cK-y3d"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="A8o-IJ-iRP"/>
+                    <navigationItem key="navigationItem" title="拍卖" id="A8o-IJ-iRP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFy-Wm-MDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.5" y="-264.5"/>
+            <point key="canvasLocation" x="532.5" y="1619.5"/>
         </scene>
         <!--拍卖-->
         <scene sceneID="RQn-oD-VgJ">
@@ -86,13 +125,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNZ-ZI-LuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1.5" y="37.5"/>
+            <point key="canvasLocation" x="25.5" y="-82.5"/>
         </scene>
         <!--我的-->
         <scene sceneID="G9p-vY-VZh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gLm-xp-pVq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="auction_47" id="dmm-tm-6Eb"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="auction_47" selectedImage="auction2_47" id="dmm-tm-6Eb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OIL-5b-rUu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -105,13 +144,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmW-ut-GTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170.5" y="873.5"/>
+            <point key="canvasLocation" x="-554.5" y="792.5"/>
         </scene>
         <!--拍卖中-->
         <scene sceneID="cpU-0C-pgB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ZE-lV-bZc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="拍卖中" image="auction_42" id="MGB-VJ-Ags"/>
+                    <tabBarItem key="tabBarItem" title="拍卖中" image="auction2_42" selectedImage="auction_42" id="MGB-VJ-Ags"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oIF-Xw-xi6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -124,13 +163,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGD-mD-kzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565.5" y="-264.5"/>
+            <point key="canvasLocation" x="577.5" y="815.5"/>
         </scene>
         <!--发布-->
         <scene sceneID="eFk-75-6me">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ymk-WU-W4V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发布" image="auction_44" id="Ien-9g-UVb"/>
+                    <tabBarItem key="tabBarItem" title="发布" image="auction_44" selectedImage="auction2_44" id="Ien-9g-UVb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1pV-0r-ATz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -143,12 +182,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV4-jm-AZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="583.5" y="532.5"/>
+            <point key="canvasLocation" x="51.5" y="832.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="auction2_42" width="28" height="28"/>
+        <image name="auction2_44" width="28" height="28"/>
+        <image name="auction2_47" width="28" height="28"/>
         <image name="auction_42" width="28" height="28"/>
         <image name="auction_44" width="28" height="28"/>
         <image name="auction_47" width="28" height="28"/>
+        <image name="tapbar_top_line" width="320" height="5"/>
     </resources>
 </document>

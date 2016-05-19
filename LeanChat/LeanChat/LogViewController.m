@@ -71,14 +71,13 @@
     [AVOSCloud setLastModifyEnabled:YES];
     
     if (SYSTEM_VERSION >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:[UIColor lightGrayColor]];
-        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        //[[UINavigationBar appearance] setBarTintColor:[UIColor lightGrayColor]];
+        //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     }
     else {
         [[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
     }
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:17], NSFontAttributeName, nil]];
     
     if ([AVUser currentUser]) {
         // Applications are expected to have a root view controller at the end of application launch
@@ -178,7 +177,7 @@
     WJPersonViewController *personViewController = [personStoryboard instantiateViewControllerWithIdentifier:@"Person"];
     
      UITabBarController *tabbarController = [[UITabBarController alloc] init];
-     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,nav, personViewController];
+     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,messageViewController, personViewController];
      
      [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
      [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
@@ -252,30 +251,15 @@
 #pragma mark - LLTabBarDelegate
 
 - (void)tabBarDidSelectedRiseButton {
-    SalingViewController *salingViewController = [[SalingViewController alloc] init];
-    UINavigationController *navSalingViewController = [[UINavigationController alloc] initWithRootViewController:salingViewController];
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Sale" bundle:nil];
+    UITabBarController *tabBarController = [sb instantiateViewControllerWithIdentifier:@"Sale"];
+    //前景色
+    [[tabBarController tabBar] setTintColor:[UIColor colorWithRed:0/255.0 green:187/255.0 blue:153/255.0 alpha:1]];
+    //背景色
+    [[tabBarController tabBar] setBarTintColor:[UIColor blueColor]];
     
-    [navSalingViewController setTitle:@"拍卖"];
-    [navSalingViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction_42"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction2_42"]];
-    navSalingViewController.tabBarItem.title = @"拍卖中";
-    
-    
-    IssueViewController *issueViewController = [[IssueViewController alloc] init];
-    UINavigationController *navIssueViewController = [[UINavigationController alloc] initWithRootViewController:issueViewController];
-    [navIssueViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction2_44"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction_44"]];
-    navIssueViewController.tabBarItem.title = @"发布";
-    
-    MySaleViewController *mySaleViewController = [[MySaleViewController alloc] init];
-    UINavigationController *navMySaleViewController = [[UINavigationController alloc] initWithRootViewController:mySaleViewController];
-    navMySaleViewController.tabBarItem.title = @"我的";
-    [navMySaleViewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"auction2_47"] withFinishedUnselectedImage:[UIImage imageNamed:@"auction_47"]];
-    
-    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0 green:187/255.f blue:153/255.f alpha:1]];
-    //创建tabBarController
-    UITabBarController *tabbarController = [[UITabBarController alloc] init];
-    tabbarController.viewControllers = @[navSalingViewController,navIssueViewController, navMySaleViewController];
     CDAppDelegate *app = [UIApplication sharedApplication ].delegate;
-    app.window.rootViewController = tabbarController;
+    app.window.rootViewController = tabBarController;
 }
 
 - (void)didReceiveMemoryWarning {

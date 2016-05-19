@@ -91,7 +91,8 @@
 		18E50FFB1CEAAD350020BB7F /* WJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FF91CEAAD350020BB7F /* WJMessageViewController.m */; };
 		18E50FFC1CEAAD350020BB7F /* WJMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */; };
 		18E510001CEAAD4C0020BB7F /* WJPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E50FFF1CEAAD4C0020BB7F /* WJPersonViewController.m */; };
-		18F0DA2D1CED4D920073390E /* Sale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0DA2C1CED4D920073390E /* Sale.storyboard */; };
+		18F13C251CEDA44E0054D73D /* CDBaseNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13C241CEDA44E0054D73D /* CDBaseNav.m */; };
+		18F13C2B1CEDB6B00054D73D /* Sale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13C2A1CEDB6AF0054D73D /* Sale.storyboard */; };
 		1FAD25EBE59E07248BD0F7D5 /* libPods-LeanChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF79D434DB9DF2EFE3DD51B2 /* libPods-LeanChat.a */; };
 		700E6A151B3D2B4E00675021 /* LZPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E6A141B3D2B4E00675021 /* LZPushManager.m */; };
 		703B392E1B74890100E649DC /* CDSNSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 703B392D1B74890100E649DC /* CDSNSView.m */; };
@@ -293,7 +294,9 @@
 		18E50FFA1CEAAD350020BB7F /* WJMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJMessageViewController.xib; sourceTree = "<group>"; };
 		18E50FFE1CEAAD4C0020BB7F /* WJPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJPersonViewController.h; sourceTree = "<group>"; };
 		18E50FFF1CEAAD4C0020BB7F /* WJPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJPersonViewController.m; sourceTree = "<group>"; };
-		18F0DA2C1CED4D920073390E /* Sale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sale.storyboard; sourceTree = "<group>"; };
+		18F13C231CEDA44E0054D73D /* CDBaseNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDBaseNav.h; sourceTree = "<group>"; };
+		18F13C241CEDA44E0054D73D /* CDBaseNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDBaseNav.m; sourceTree = "<group>"; };
+		18F13C2A1CEDB6AF0054D73D /* Sale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Sale.storyboard; sourceTree = "<group>"; };
 		4A71AD2EA525F79828723CA0 /* Pods-LeanChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeanChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeanChat/Pods-LeanChat.release.xcconfig"; sourceTree = "<group>"; };
 		700E6A131B3D2B4E00675021 /* LZPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPushManager.h; sourceTree = "<group>"; };
 		700E6A141B3D2B4E00675021 /* LZPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPushManager.m; sourceTree = "<group>"; };
@@ -737,7 +740,7 @@
 				18A729041CE9C74B002103CF /* ViewController.h */,
 				18A729051CE9C74B002103CF /* ViewController.m */,
 				18A729061CE9C74B002103CF /* Main.storyboard */,
-				18F0DA2C1CED4D920073390E /* Sale.storyboard */,
+				18F13C2A1CEDB6AF0054D73D /* Sale.storyboard */,
 				181BED3E1CEAB8E300B87350 /* 二维码扫描 */,
 				18E510011CEAADC60020BB7F /* LogAndReg */,
 				18E50FD21CEAAC590020BB7F /* ViewController */,
@@ -784,6 +787,8 @@
 				9AD85BB81C21666B006A35C1 /* CYLTabBarControllerConfig.m */,
 				7073FC421B14718C006F2692 /* CDBaseNavC.h */,
 				7073FC431B14718C006F2692 /* CDBaseNavC.m */,
+				18F13C231CEDA44E0054D73D /* CDBaseNav.h */,
+				18F13C241CEDA44E0054D73D /* CDBaseNav.m */,
 				7073FC461B14718C006F2692 /* CDBaseTableVC.h */,
 				7073FC471B14718C006F2692 /* CDBaseTableVC.m */,
 				7073FC481B14718C006F2692 /* CDBaseVC.h */,
@@ -1074,7 +1079,6 @@
 				18A729011CE9C742002103CF /* guide1.jpg in Resources */,
 				18E50FB01CEAABCA0020BB7F /* photo_sel_previewVc@2x.png in Resources */,
 				18E50F871CEAAAD30020BB7F /* WJHomeTableViewCell.xib in Resources */,
-				18F0DA2D1CED4D920073390E /* Sale.storyboard in Resources */,
 				7073FCBB1B14718C006F2692 /* CDAddFriendVC.xib in Resources */,
 				18E50F831CEAAAD30020BB7F /* NewForumContentCell.xib in Resources */,
 				18A729241CE9C803002103CF /* RegViewController.xib in Resources */,
@@ -1094,6 +1098,7 @@
 				18E50F851CEAAAD30020BB7F /* NewForumImagesCell.xib in Resources */,
 				18E50FB21CEAABCA0020BB7F /* preview_original_def@2x.png in Resources */,
 				18E50FAE1CEAABCA0020BB7F /* photo_original_sel@2x.png in Resources */,
+				18F13C2B1CEDB6B00054D73D /* Sale.storyboard in Resources */,
 				18E50FAF1CEAABCA0020BB7F /* photo_sel_photoPickerVc@2x.png in Resources */,
 				181BED571CEAEED100B87350 /* NewForumLocationCell.xib in Resources */,
 				18A729021CE9C742002103CF /* guide2.jpg in Resources */,
@@ -1195,6 +1200,7 @@
 				70DC7DB31B2F531F0047B7AB /* CDIMService.m in Sources */,
 				70DC7DB21B2F531F0047B7AB /* CDCacheManager.m in Sources */,
 				7073FCB71B14718C006F2692 /* CDEntryVC.m in Sources */,
+				18F13C251CEDA44E0054D73D /* CDBaseNav.m in Sources */,
 				703B392E1B74890100E649DC /* CDSNSView.m in Sources */,
 				18E50F941CEAAB780020BB7F /* JHCustomMenu.m in Sources */,
 				181BED561CEAEED100B87350 /* NewForumLocationCell.m in Sources */,
