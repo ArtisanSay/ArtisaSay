@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5682A08E1A8290BD4B3FFAFF'
+               BlueprintIdentifier = '559BD0AB0ED791EF83E78558'
                BlueprintName = 'Pods-LeanChat'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-LeanChat.a'>

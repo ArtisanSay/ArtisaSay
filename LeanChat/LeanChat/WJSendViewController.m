@@ -66,7 +66,6 @@
     
     _toolBar.items = @[barBtnItem1, space, barBtnItem2, space, barBtnItem3, space, barBtnItem4, space, space, space,space];
     [self.view addSubview:_toolBar];
-    
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(frameChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
 }

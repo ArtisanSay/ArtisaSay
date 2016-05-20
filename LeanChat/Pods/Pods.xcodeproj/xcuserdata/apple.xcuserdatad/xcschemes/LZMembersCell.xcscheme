@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0077575C9B639E196FF395D4'
+               BlueprintIdentifier = 'AC4B01787F9269E59A472E39'
                BlueprintName = 'LZMembersCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libLZMembersCell.a'>

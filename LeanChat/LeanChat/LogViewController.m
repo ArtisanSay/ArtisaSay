@@ -257,7 +257,6 @@
     [[tabBarController tabBar] setTintColor:[UIColor colorWithRed:0/255.0 green:187/255.0 blue:153/255.0 alpha:1]];
     //背景色
     [[tabBarController tabBar] setBarTintColor:[UIColor blueColor]];
-    
     CDAppDelegate *app = [UIApplication sharedApplication ].delegate;
     app.window.rootViewController = tabBarController;
 }

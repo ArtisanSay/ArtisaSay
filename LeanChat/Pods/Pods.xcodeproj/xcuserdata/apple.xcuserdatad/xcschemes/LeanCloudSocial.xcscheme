@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D386AEA9AA98045A97551EFB'
+               BlueprintIdentifier = '1C96640825BE6C8F2D5C472A'
                BlueprintName = 'LeanCloudSocial'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libLeanCloudSocial.a'>

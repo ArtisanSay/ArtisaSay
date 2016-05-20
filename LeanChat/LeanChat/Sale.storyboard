@@ -169,7 +169,7 @@
         <scene sceneID="eFk-75-6me">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ymk-WU-W4V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发布" image="auction_44" selectedImage="auction2_44" id="Ien-9g-UVb"/>
+                    <tabBarItem key="tabBarItem" title="发布" image="auction3_03" selectedImage="auction3_03" id="LKW-CM-xOK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1pV-0r-ATz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -187,10 +187,9 @@
     </scenes>
     <resources>
         <image name="auction2_42" width="28" height="28"/>
-        <image name="auction2_44" width="28" height="28"/>
         <image name="auction2_47" width="28" height="28"/>
+        <image name="auction3_03" width="28" height="28"/>
         <image name="auction_42" width="28" height="28"/>
-        <image name="auction_44" width="28" height="28"/>
         <image name="auction_47" width="28" height="28"/>
         <image name="tapbar_top_line" width="320" height="5"/>
     </resources>
