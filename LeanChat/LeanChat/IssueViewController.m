@@ -7,7 +7,7 @@
 //
 
 #import "IssueViewController.h"
-
+#import "SaleInfoViewController.h"
 @interface IssueViewController ()
 
 @end
@@ -17,12 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    self.navigationItem.backBarButtonItem = item;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)btn:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SaleInform" bundle:nil];
+    SaleInfoViewController *info = [sb instantiateViewControllerWithIdentifier:@"SaleInfoViewController"];
+    [self.navigationController pushViewController:info animated:YES];
+    
+}
+
+
 
 /*
 #pragma mark - Navigation

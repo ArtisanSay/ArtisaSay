@@ -17,7 +17,7 @@
 #import "CheckLocation.h"
 #import "Masonry.h"
 #import "AppShare.h"
-//WJImagePickerController
+#import "SDCycleScrollView.h"
 #import "TZAssetCell.h"
 #import "TZAssetModel.h"
 #import "TZImageManager.h"

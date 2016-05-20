@@ -38,18 +38,20 @@
     ViewController *viewController = [stordBoard instantiateViewControllerWithIdentifier:@"main"];
     self.window.rootViewController = viewController;
     
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    imgView.image = [UIImage imageNamed:@"2.png"];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.window addSubview:imgView];
-    [self performSelector:@selector(lunchFlash:) withObject:imgView afterDelay:1.f];
+    NSMutableArray *mutableArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 48; i++) {
+        NSString *str = [NSString stringWithFormat:@"animation00%d.png", i+1];
+        UIImage *img=[UIImage imageNamed:str];
+        [mutableArr addObject:img];
+    }
+    [imgView setAnimationImages:mutableArr];
+    imgView.animationRepeatCount=1;
+    [imgView setAnimationDuration:2.f];
+    [imgView startAnimating];
     
     return YES;
-}
-- (void)lunchFlash:(UIImageView *)imageView{
-    [UIView animateWithDuration:1.f animations:^{
-        [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.window cache:NO];
-        [imageView removeFromSuperview];
-    }];
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     [[LZPushManager manager] syncBadge];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WB4-Ez-83K">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -68,12 +68,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkR-MA-hmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.5" y="1613.5"/>
+            <point key="canvasLocation" x="46.5" y="1619.5"/>
         </scene>
         <!--拍卖-->
         <scene sceneID="H5u-zw-Kek">
             <objects>
-                <viewController id="4xt-Pm-pB2" customClass="SalingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SalingViewController" id="4xt-Pm-pB2" customClass="SalingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q82-Ru-0pT"/>
                         <viewControllerLayoutGuide type="bottom" id="TVZ-Wv-EmA"/>
@@ -88,16 +88,60 @@
                                     <constraint firstAttribute="height" constant="5" id="b02-05-J13"/>
                                 </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l1z-Jb-XLI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="549"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WJSaleScrollViewCell" rowHeight="200" id="T2A-v2-tLh">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T2A-v2-tLh" id="Q6a-Bh-km8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WJSaleSortCell" rowHeight="150" id="YtK-Si-NIe">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YtK-Si-NIe" id="Ahr-2a-xJM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WJSaleThemeCell" rowHeight="200" id="iHq-pA-uvx">
+                                        <rect key="frame" x="0.0" y="378" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iHq-pA-uvx" id="iE8-YK-MS1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4xt-Pm-pB2" id="RtT-YJ-41b"/>
+                                    <outlet property="delegate" destination="4xt-Pm-pB2" id="uIZ-zl-Mta"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fvv-kt-ca7" firstAttribute="leading" secondItem="vkU-iF-meJ" secondAttribute="leading" id="5Wp-to-pa5"/>
+                            <constraint firstAttribute="trailing" secondItem="l1z-Jb-XLI" secondAttribute="trailing" id="OB0-Fr-rL1"/>
+                            <constraint firstItem="l1z-Jb-XLI" firstAttribute="top" secondItem="q82-Ru-0pT" secondAttribute="bottom" id="a13-j9-TVU"/>
+                            <constraint firstItem="l1z-Jb-XLI" firstAttribute="leading" secondItem="vkU-iF-meJ" secondAttribute="leading" id="cKA-2T-tyh"/>
                             <constraint firstItem="TVZ-Wv-EmA" firstAttribute="top" secondItem="Fvv-kt-ca7" secondAttribute="bottom" id="hdR-Eu-NhH"/>
                             <constraint firstAttribute="trailing" secondItem="Fvv-kt-ca7" secondAttribute="trailing" id="t3r-cK-y3d"/>
+                            <constraint firstItem="Fvv-kt-ca7" firstAttribute="top" secondItem="l1z-Jb-XLI" secondAttribute="bottom" id="v3O-Mf-odz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="拍卖" id="A8o-IJ-iRP"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="saleTabView" destination="l1z-Jb-XLI" id="Zfs-Um-eBw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFy-Wm-MDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,7 +213,7 @@
         <scene sceneID="eFk-75-6me">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ymk-WU-W4V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发布" image="auction3_03" selectedImage="auction3_03" id="LKW-CM-xOK"/>
+                    <tabBarItem key="tabBarItem" title="发布" image="auction_44" selectedImage="auction2_44" id="LKW-CM-xOK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1pV-0r-ATz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -187,9 +231,10 @@
     </scenes>
     <resources>
         <image name="auction2_42" width="28" height="28"/>
+        <image name="auction2_44" width="28" height="28"/>
         <image name="auction2_47" width="28" height="28"/>
-        <image name="auction3_03" width="28" height="28"/>
         <image name="auction_42" width="28" height="28"/>
+        <image name="auction_44" width="28" height="28"/>
         <image name="auction_47" width="28" height="28"/>
         <image name="tapbar_top_line" width="320" height="5"/>
     </resources>
