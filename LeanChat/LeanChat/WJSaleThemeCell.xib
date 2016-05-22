@@ -3,17 +3,86 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WJSaleThemeCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WJSaleThemeCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WJSaleThemeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WJSaleThemeCell" rowHeight="240" id="KGk-i7-Jjw" customClass="WJSaleThemeCell">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="239"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="404" height="238.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_03" translatesAutoresizingMaskIntoConstraints="NO" id="EKl-wD-eRW">
+                        <rect key="frame" x="10" y="10" width="40.5" height="40.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="EKl-wD-eRW" secondAttribute="height" multiplier="1:1" id="kLZ-ry-e50"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="艺匠说" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKc-zR-fIo">
+                        <rect key="frame" x="60.5" y="10" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CFk-sA-zz7"/>
+                            <constraint firstAttribute="width" constant="100" id="WV8-lt-3P1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.89803921568627454" green="0.22745098039215686" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4-29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfD-UX-Rqb">
+                        <rect key="frame" x="60" y="31" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="i7z-OB-jk0"/>
+                            <constraint firstAttribute="height" constant="21" id="oYo-In-m8w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自  某某某大学" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hQ-yW-auL">
+                        <rect key="frame" x="102" y="31" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BCX-PE-gXj"/>
+                            <constraint firstAttribute="width" constant="200" id="xzs-be-Dtm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bSg-mq-pqn">
+                        <rect key="frame" x="10" y="62" width="384" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="mQs-Ky-WyP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bSg-mq-pqn" secondAttribute="trailing" constant="10" id="Fu9-ro-PXl"/>
+                    <constraint firstItem="FfD-UX-Rqb" firstAttribute="top" secondItem="OKc-zR-fIo" secondAttribute="bottom" id="P9w-fU-FPH"/>
+                    <constraint firstItem="EKl-wD-eRW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Whi-CE-7sJ"/>
+                    <constraint firstItem="7hQ-yW-auL" firstAttribute="top" secondItem="OKc-zR-fIo" secondAttribute="bottom" id="akD-ET-BsX"/>
+                    <constraint firstItem="OKc-zR-fIo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="b7x-Wc-2K8"/>
+                    <constraint firstItem="OKc-zR-fIo" firstAttribute="leading" secondItem="EKl-wD-eRW" secondAttribute="trailing" constant="10" id="elS-lv-bK4"/>
+                    <constraint firstItem="EKl-wD-eRW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ere-WD-pYQ"/>
+                    <constraint firstItem="bSg-mq-pqn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ew5-i0-g7V"/>
+                    <constraint firstItem="FfD-UX-Rqb" firstAttribute="leading" secondItem="EKl-wD-eRW" secondAttribute="trailing" constant="10" id="oaP-Os-V3E"/>
+                    <constraint firstItem="bSg-mq-pqn" firstAttribute="top" secondItem="7hQ-yW-auL" secondAttribute="bottom" constant="10" id="paW-7j-ea5"/>
+                    <constraint firstItem="7hQ-yW-auL" firstAttribute="leading" secondItem="FfD-UX-Rqb" secondAttribute="trailing" id="tBO-xY-dwz"/>
+                </constraints>
             </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="EKl-wD-eRW" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.1" id="8AJ-SW-jnd"/>
+            </constraints>
+            <point key="canvasLocation" x="256" y="224.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="home_03" width="24" height="24"/>
+    </resources>
 </document>

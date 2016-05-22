@@ -30,8 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_tabView registerNib:[UINib nibWithNibName:@"WJHomeTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    
-    
 //    self.tabView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
 //        [_tabView reloadData];
 //    }];

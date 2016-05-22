@@ -13,7 +13,6 @@
 #import "RegViewController.h"
 #import "WJHomeViewController.h"
 #import "WJSchoolViewController.h"
-//#import "WJSaleViewController.h"
 #import "WJMessageViewController.h"
 #import "WJPersonViewController.h"
 #import "RetrievePswViewController.h"
@@ -171,13 +170,13 @@
      WJSchoolViewController *schoolCityViewController = [[WJSchoolViewController alloc] init];
     
      CDConvsVC *messageViewController = [[CDConvsVC alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:messageViewController];
+    UINavigationController *messageNav = [[UINavigationController alloc]initWithRootViewController:messageViewController];
     
     UIStoryboard *personStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     WJPersonViewController *personViewController = [personStoryboard instantiateViewControllerWithIdentifier:@"Person"];
     
      UITabBarController *tabbarController = [[UITabBarController alloc] init];
-     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,messageViewController, personViewController];
+     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,messageNav, personViewController];
      
      [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
      [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
@@ -216,13 +215,7 @@
      
      CDAppDelegate *app = [UIApplication sharedApplication].delegate;
      app.window.rootViewController = tabbarController;
-     
 }
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
-}
-
 - (LLTabBarItem *)tabBarItemWithFrame:(CGRect)frame title:(NSString *)title normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName tabBarItemType:(LLTabBarItemType)tabBarItemType {
     LLTabBarItem *item = [[LLTabBarItem alloc] initWithFrame:frame];
     [item setTitle:title forState:UIControlStateNormal];
@@ -239,6 +232,11 @@
     
     return item;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 - (IBAction)forgetPswBtn:(id)sender {
     RetrievePswViewController *retrievePswViewController = [[RetrievePswViewController alloc] init];
     [self presentViewController:retrievePswViewController animated:YES completion:nil];

@@ -1,9 +1,7 @@
 //
 //  AlbumViewCell.m
-//  sc
-//
-//  Created by 吴逢山 on 18/02/16.
-//  Copyright © 2016年 wufengshan. All rights reserved.
+//  Created by 王健 on 18/05/16.
+//  Copyright © 2016年 wangjian. All rights reserved.
 //
 
 #import "AlbumViewCell.h"

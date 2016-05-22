@@ -65,7 +65,7 @@
                     <view key="view" contentMode="scaleToFill" id="cVa-aL-9ni">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="发布消息" id="tPs-Hj-xsY">
                         <barButtonItem key="leftBarButtonItem" title="取消" id="z5S-n6-Kkc">
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q8-R8-E3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-432.5" y="330.5"/>
+            <point key="canvasLocation" x="-388.5" y="421.5"/>
         </scene>
         <!--Person View Controller-->
         <scene sceneID="92e-H8-3ZL">
@@ -241,8 +241,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3QN-fe-yM7">
+                                <rect key="frame" x="0.0" y="245" width="320" height="6.5"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ozw-Mk-7ej">
-                                <rect key="frame" x="0.0" y="251.5" width="320" height="316.5"/>
+                                <rect key="frame" x="0.0" y="251" width="320" height="316.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="bD5-R1-pNe">
@@ -512,9 +515,6 @@
                                     <outlet property="delegate" destination="WgV-nS-wZj" id="Guv-En-29p"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3QN-fe-yM7">
-                                <rect key="frame" x="0.0" y="245" width="320" height="6.5"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -598,6 +598,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GC1-4k-hfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-49" y="281"/>
+        </scene>
+        <!--Add Album View Controller-->
+        <scene sceneID="uHn-pQ-QE1">
+            <objects>
+                <viewController storyboardIdentifier="AddAlbumViewController" id="EUa-4H-s6r" customClass="AddAlbumViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vK0-Ku-8Jm"/>
+                        <viewControllerLayoutGuide type="bottom" id="lxX-Xw-e8E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gAL-Dn-Eid">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4B-cv-NxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

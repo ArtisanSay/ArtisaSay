@@ -11,7 +11,7 @@
 #import "NewForumContentCell.h"
 #import "NewForumImagesCell.h"
 #import "NewForumLocationCell.h"
-//#import "SSPictureViewer.h"
+#import "AddAlbumViewController.h"
 
 @interface WJSendViewController ()<UITextFieldDelegate,UITextViewDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate, TZImagePickerControllerDelegate,CustomPickerViewDelegate>
 
@@ -106,7 +106,7 @@
     [self.myTableView reloadData];
 }
 
-#pragma - mark 发送图片
+#pragma - mark 添加图片
 - (void)sendPhotoBarBtn{
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:nil];
     imagePickerVc.allowPickingVideo         = YES;
@@ -126,41 +126,6 @@
 - (void)textViewDidEndEditing:(UITextView *)textView {
     [_infoDic setValue:textView.text forKey:@"forumContent"];
 }
-/*
-- (void)uploadImageBeforCreate {
-    
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formate = [[NSDateFormatter alloc]init];
-    formate.dateFormat = @"YYYYMMddHHmmssSSS";
-    NSString *filePath2 =[NSString stringWithFormat:@"%@_%@",[AppShare shareInstance].user.account,[formate stringFromDate:date]];
-    [_infoDic setObject:filePath2 forKey:@"picture"];
-    
-    NSString *filePath1 = _type == CreatNewTypeForum ? @"VCP" : @"schoolTaobao";
-    
-    for(NSInteger i = 0 ; i < _selectedPhotos.count ; i ++){
-        [_uploadQueue addObject:[_selectedPhotos objectAtIndex:i]];
-        [self uploadImgae:[_selectedPhotos objectAtIndex:i] filePath1:filePath1 filePath2:filePath2 imgName:nil location:i];
-    }
-}
-- (void)createNewForum {
-    [[AppShare shareInstance] showPregressView:@"正在创建"];
-    [_adl createNewForum:[AppShare shareInstance].user.userId text:[_infoDic objectForKey:@"forumContent"] picture:[_infoDic objectForKey:@"picture"] school:@"" launchplace:[_infoDic objectForKey:@"locationStr"]];
-}
-
-- (void)uploadImgae:(UIImage *)img filePath1:(NSString *)filePath1 filePath2:(NSString *)filePath2 imgName:(NSString *)imgName location:(NSInteger)location {
-    //get photo name by mobileNum _ time
-    NSDate *date = [NSDate date];
-    NSDateFormatter *formate = [[NSDateFormatter alloc]init];
-    formate.dateFormat = @"YYYYMMddHHmmssSSS";
-    NSString *timeStr = [[formate stringFromDate:date] stringByAppendingString:@".jpg"];
-    
-    //    schoolTaobao/USER_PHONE_yyyyMMddHHmmssSSS/img.jpg
-    
-    NSData *data = UIImageJPEGRepresentation(img, 0.5);
-    
-    [_adl uploadFile:timeStr filePath1:filePath1 filePath2:filePath2 fileData:data location:location];
-}
-*/
 
 #pragma - mark 发送表情
 - (void)sendFaceBarBtn{
@@ -189,15 +154,18 @@
 }
 
 - (IBAction)sendBtn:(id)sender {
-    NSString *forumContent = [_infoDic objectForKey:@"forumContent"];
-    if (forumContent.length > 0 && forumContent) {
-        if(![AppShare checkNewForumContent:[_infoDic objectForKey:@"forumContent"]]){
-            return;
-        }
-        if (_mutablePhoto.count > 0) {
-            [self uploadImageBeforCreate];
-        }
-    }
+    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AddAlbumViewController *addAblum = [main instantiateViewControllerWithIdentifier:@"AddAlbumViewController"];
+    [self.navigationController pushViewController:addAblum animated:YES];
+//    NSString *forumContent = [_infoDic objectForKey:@"forumContent"];
+//    if (forumContent.length > 0 && forumContent) {
+//        if(![AppShare checkNewForumContent:[_infoDic objectForKey:@"forumContent"]]){
+//            return;
+//        }
+//        if (_mutablePhoto.count > 0) {
+//            [self uploadImageBeforCreate];
+//        }
+//    }
 }
 - (void)remindUserAboutNewWithoutImages {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"新建内容中没有添加图片,你是否继续上传?" message:nil preferredStyle:UIAlertControllerStyleAlert];
