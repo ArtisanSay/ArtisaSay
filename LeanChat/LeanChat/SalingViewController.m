@@ -11,7 +11,7 @@
 #import "WJSaleSortCell.h"
 #import "WJSaleThemeCell.h"
 #import "SaleInfoViewController.h"
-
+#import "CDAppDelegate.h"
 @interface SalingViewController ()<SDCycleScrollViewDelegate, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *saleTabView;
@@ -213,7 +213,8 @@
 - (void)rightSearchBtn{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SaleInform" bundle:nil];
     SaleInfoViewController *info = [sb instantiateViewControllerWithIdentifier:@"SaleInfoViewController"];
-    [self.navigationController pushViewController:info animated:YES];
+    CDAppDelegate *app = [UIApplication sharedApplication].delegate;
+    app.window.rootViewController = info;
 }
 - (void)rightMessageBtn{
     NSLog(@"rightMessageBtn");
