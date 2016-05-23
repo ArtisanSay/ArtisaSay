@@ -98,16 +98,8 @@
                                     <constraint firstAttribute="width" constant="7" id="QJ4-xM-4Ku"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKp-Ge-Z0V">
-                                <rect key="frame" x="37.5" y="9.5" width="21" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="biK-ZZ-BdG"/>
-                                    <constraint firstAttribute="height" constant="21" id="cu6-5n-9Uo"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="home_24"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转发" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8F-wL-M8B">
-                                <rect key="frame" x="65.5" y="9.5" width="42" height="21"/>
+                                <rect key="frame" x="66" y="9" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="GVJ-sV-ToS"/>
                                     <constraint firstAttribute="width" constant="42" id="L7g-em-iP8"/>
@@ -116,6 +108,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKp-Ge-Z0V">
+                                <rect key="frame" x="37" y="9" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="biK-ZZ-BdG"/>
+                                    <constraint firstAttribute="height" constant="21" id="cu6-5n-9Uo"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="home_24"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,7 +128,7 @@
                             <constraint firstItem="1ck-l8-Zo7" firstAttribute="height" secondItem="fiJ-kp-yXT" secondAttribute="height" id="wK9-yx-r6m"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fN-8w-oYI">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fN-8w-oYI" userLabel="View2">
                         <rect key="frame" x="126" y="159" width="123.5" height="40"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ym-GZ-mrE">
@@ -168,7 +168,7 @@
                             <constraint firstItem="1Ym-GZ-mrE" firstAttribute="height" secondItem="8fN-8w-oYI" secondAttribute="height" id="wuv-7A-4of"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEx-s0-Z6o">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEx-s0-Z6o" userLabel="View3">
                         <rect key="frame" x="251.5" y="159" width="123.5" height="40"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kw1-6H-r1r">
@@ -251,7 +251,7 @@
                     <constraint firstItem="iOh-pj-aqg" firstAttribute="top" secondItem="esr-cb-bsn" secondAttribute="bottom" constant="10" id="zb5-CF-D1W"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="351.5" y="291"/>
+            <point key="canvasLocation" x="389.5" y="272"/>
         </tableViewCell>
     </objects>
     <resources>

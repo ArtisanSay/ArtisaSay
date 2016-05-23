@@ -14,14 +14,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="under1" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-Iw-zad">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqT-Hj-uxX">
-                    <rect key="frame" x="20" y="600" width="112.5" height="47"/>
+                    <rect key="frame" x="20" y="420" width="96" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="mqT-Hj-uxX" secondAttribute="height" multiplier="112:47" id="ETY-Jn-29H"/>
                     </constraints>
@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-1T-7y2">
-                    <rect key="frame" x="242.5" y="600" width="112.5" height="47"/>
+                    <rect key="frame" x="204" y="420" width="96" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="yP6-1T-7y2" secondAttribute="height" multiplier="112:47" id="O2y-lo-nLE"/>
                     </constraints>
@@ -58,7 +58,7 @@
                 <constraint firstItem="yP6-1T-7y2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.3" id="uzr-HT-7Vz"/>
                 <constraint firstAttribute="trailing" secondItem="6fq-Iw-zad" secondAttribute="trailing" id="zYH-hM-2FP"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>

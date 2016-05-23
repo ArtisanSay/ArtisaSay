@@ -9,7 +9,6 @@
 #import "Emoji.h"
 #import "EmojiEmoticons.h"
 
-
 @implementation Emoji
 + (NSString *)emojiWithCode:(int)code {
     int sym = EMOJI_CODE_TO_SYMBOL(code);

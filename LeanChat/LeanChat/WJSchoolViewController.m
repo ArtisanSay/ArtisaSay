@@ -9,6 +9,7 @@
 #import "WJSchoolViewController.h"
 
 @interface WJSchoolViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *adImgView;
 
 @end
 
@@ -16,6 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+- (IBAction)deleteImgBtn:(UIButton *)sender {
+    [_adImgView removeFromSuperview];
+    [sender removeFromSuperview];
+    [_tabView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@64);
+    }];
+    [_tabView updateConstraints];
 }
 
 - (void)didReceiveMemoryWarning {

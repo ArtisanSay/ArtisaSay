@@ -22,7 +22,6 @@
 		1809EC411CEF212A0019ED67 /* ScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809EC401CEF212A0019ED67 /* ScrollViewCell.m */; };
 		1809EC461CEF21530019ED67 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809EC441CEF21530019ED67 /* IssueViewController.m */; };
 		1809EC471CEF21530019ED67 /* IssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC451CEF21530019ED67 /* IssueViewController.xib */; };
-		1816D50A1CF18FF70060717A /* mainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816D5091CF18FF70060717A /* mainView.m */; };
 		1816D50E1CF19ACB0060717A /* AddAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816D50D1CF19ACB0060717A /* AddAlbumViewController.m */; };
 		181BED481CEAB8FF00B87350 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 181BED401CEAB8FF00B87350 /* noticeMusic.wav */; };
 		181BED491CEAB8FF00B87350 /* lightNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 181BED411CEAB8FF00B87350 /* lightNormal.png */; };
@@ -59,6 +58,8 @@
 		18A729271CE9C803002103CF /* AlertPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A7291B1CE9C803002103CF /* AlertPswViewController.m */; };
 		18A729281CE9C803002103CF /* AlertPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A7291C1CE9C803002103CF /* AlertPswViewController.xib */; };
 		18A729B51CE9C960002103CF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A729B41CE9C960002103CF /* Launch Screen.storyboard */; };
+		18AC378B1CF2F01F00678D20 /* WJSchoolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC37891CF2F01F00678D20 /* WJSchoolTableViewCell.m */; };
+		18AC378C1CF2F01F00678D20 /* WJSchoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AC378A1CF2F01F00678D20 /* WJSchoolTableViewCell.xib */; };
 		18B814B81CED6D2F00240826 /* SalingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814B61CED6D2F00240826 /* SalingViewController.m */; };
 		18B814B91CED6D2F00240826 /* SalingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B814B71CED6D2F00240826 /* SalingViewController.xib */; };
 		18B814BD1CED6E0100240826 /* MySaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814BB1CED6E0100240826 /* MySaleViewController.m */; };
@@ -212,8 +213,6 @@
 		1809EC431CEF21530019ED67 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
 		1809EC441CEF21530019ED67 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
 		1809EC451CEF21530019ED67 /* IssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueViewController.xib; sourceTree = "<group>"; };
-		1816D5081CF18FF70060717A /* mainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainView.h; sourceTree = "<group>"; };
-		1816D5091CF18FF70060717A /* mainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainView.m; sourceTree = "<group>"; };
 		1816D50C1CF19ACB0060717A /* AddAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlbumViewController.h; sourceTree = "<group>"; };
 		1816D50D1CF19ACB0060717A /* AddAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlbumViewController.m; sourceTree = "<group>"; };
 		181BED401CEAB8FF00B87350 /* noticeMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noticeMusic.wav; sourceTree = "<group>"; };
@@ -263,6 +262,9 @@
 		18A7291B1CE9C803002103CF /* AlertPswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertPswViewController.m; sourceTree = "<group>"; };
 		18A7291C1CE9C803002103CF /* AlertPswViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertPswViewController.xib; sourceTree = "<group>"; };
 		18A729B41CE9C960002103CF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		18AC37881CF2F01F00678D20 /* WJSchoolTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSchoolTableViewCell.h; sourceTree = "<group>"; };
+		18AC37891CF2F01F00678D20 /* WJSchoolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSchoolTableViewCell.m; sourceTree = "<group>"; };
+		18AC378A1CF2F01F00678D20 /* WJSchoolTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSchoolTableViewCell.xib; sourceTree = "<group>"; };
 		18B814B51CED6D2F00240826 /* SalingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalingViewController.h; sourceTree = "<group>"; };
 		18B814B61CED6D2F00240826 /* SalingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalingViewController.m; sourceTree = "<group>"; };
 		18B814B71CED6D2F00240826 /* SalingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalingViewController.xib; sourceTree = "<group>"; };
@@ -552,13 +554,11 @@
 		1816D5061CF18FAB0060717A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				1816D5081CF18FF70060717A /* mainView.h */,
-				1816D5091CF18FF70060717A /* mainView.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
 		};
-		181BED3E1CEAB8E300B87350 /* 二维码扫描 */ = {
+		181BED3E1CEAB8E300B87350 /* ErweimaScan */ = {
 			isa = PBXGroup;
 			children = (
 				181BED4F1CEAB92E00B87350 /* lhScanQCodeViewController.h */,
@@ -572,7 +572,7 @@
 				181BED461CEAB8FF00B87350 /* QRCodeReaderView.h */,
 				181BED471CEAB8FF00B87350 /* QRCodeReaderView.m */,
 			);
-			name = "二维码扫描";
+			name = ErweimaScan;
 			sourceTree = "<group>";
 		};
 		181BED611CEAF87D00B87350 /* HJLearnChat */ = {
@@ -751,6 +751,9 @@
 				18E50FEC1CEAACFD0020BB7F /* WJSchoolViewController.h */,
 				18E50FED1CEAACFD0020BB7F /* WJSchoolViewController.m */,
 				18E50FEE1CEAACFD0020BB7F /* WJSchoolViewController.xib */,
+				18AC37881CF2F01F00678D20 /* WJSchoolTableViewCell.h */,
+				18AC37891CF2F01F00678D20 /* WJSchoolTableViewCell.m */,
+				18AC378A1CF2F01F00678D20 /* WJSchoolTableViewCell.xib */,
 			);
 			name = School;
 			sourceTree = "<group>";
@@ -856,7 +859,7 @@
 				18A729061CE9C74B002103CF /* Main.storyboard */,
 				18F13C2A1CEDB6AF0054D73D /* Sale.storyboard */,
 				1816D5061CF18FAB0060717A /* Helper */,
-				181BED3E1CEAB8E300B87350 /* 二维码扫描 */,
+				181BED3E1CEAB8E300B87350 /* ErweimaScan */,
 				18E510011CEAADC60020BB7F /* LogAndReg */,
 				18E50FD21CEAAC590020BB7F /* ViewController */,
 				18E50F951CEAAB8E0020BB7F /* WJImagePickerController */,
@@ -1218,6 +1221,7 @@
 				18A729261CE9C803002103CF /* RetrievePswViewController.xib in Resources */,
 				18E50F851CEAAAD30020BB7F /* NewForumImagesCell.xib in Resources */,
 				18E50FB21CEAABCA0020BB7F /* preview_original_def@2x.png in Resources */,
+				18AC378C1CF2F01F00678D20 /* WJSchoolTableViewCell.xib in Resources */,
 				1841F1FF1CF16A51003429B9 /* WJSaleDetailCell.xib in Resources */,
 				18E50FAE1CEAABCA0020BB7F /* photo_original_sel@2x.png in Resources */,
 				18F13C2B1CEDB6B00054D73D /* Sale.storyboard in Resources */,
@@ -1354,6 +1358,7 @@
 				7073FCCB1B14718C006F2692 /* CDButton.m in Sources */,
 				7073FCDB1B1471A4006F2692 /* CDAppDelegate.m in Sources */,
 				18E50FD01CEAABDD0020BB7F /* TZVideoPlayerController.m in Sources */,
+				18AC378B1CF2F01F00678D20 /* WJSchoolTableViewCell.m in Sources */,
 				18E50FE11CEAACC20020BB7F /* LLTabBarItem.m in Sources */,
 				18E50F841CEAAAD30020BB7F /* NewForumImagesCell.m in Sources */,
 				7073FCC11B14718C006F2692 /* CDUserInfoVC.m in Sources */,
@@ -1409,7 +1414,6 @@
 				70EB81591B4399AB0010659C /* CDProfileNameVC.m in Sources */,
 				7073FCB91B14718C006F2692 /* CDRegisterVC.m in Sources */,
 				18E50FCE1CEAABDD0020BB7F /* TZPhotoPreviewCell.m in Sources */,
-				1816D50A1CF18FF70060717A /* mainView.m in Sources */,
 				7073FCAF1B14718C006F2692 /* CDConvsVC.m in Sources */,
 				181BED511CEAB92E00B87350 /* lhScanQCodeViewController.m in Sources */,
 				1809EC461CEF21530019ED67 /* IssueViewController.m in Sources */,

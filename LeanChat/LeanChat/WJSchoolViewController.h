@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WJSchoolViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tabView;
 
 @end

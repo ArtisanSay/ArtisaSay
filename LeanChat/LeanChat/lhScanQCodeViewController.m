@@ -45,16 +45,10 @@
     [self InitScan];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - 返回
 - (void)backButtonEvent
 {
     [self dismissViewControllerAnimated:YES completion:^{
-        
     }];
 }
 
@@ -109,11 +103,9 @@
 - (void)reStartScan
 {
     readview.is_Anmotion = NO;
-    
     if (readview.is_AnmotionFinished) {
         [readview loopDrawLine];
     }
-    
     [readview start];
 }
 
@@ -121,13 +113,11 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     if (isFirst || isPush) {
         if (readview) {
             [self reStartScan];
         }
     }
-    
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -138,13 +128,11 @@
         [readview stop];
         readview.is_Anmotion = YES;
     }
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     if (isFirst) {
         isFirst = NO;
     }
@@ -153,14 +141,9 @@
     }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-*/
 
 @end

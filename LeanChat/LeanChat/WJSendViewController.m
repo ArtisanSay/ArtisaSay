@@ -129,7 +129,7 @@
 
 #pragma - mark 发送表情
 - (void)sendFaceBarBtn{
-    NSLog(@"发送表情");
+    [Emoji allEmoji];
 }
 #pragma - mark 关注@
 - (void)attentionBarBtn{
@@ -154,9 +154,10 @@
 }
 
 - (IBAction)sendBtn:(id)sender {
-    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    AddAlbumViewController *addAblum = [main instantiateViewControllerWithIdentifier:@"AddAlbumViewController"];
-    [self.navigationController pushViewController:addAblum animated:YES];
+    NSLog(@"%@----%@-----%@", _infoDic[@"forumContent"], _selectedPhotos, _infoDic[@"locationStr"]);
+//    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    AddAlbumViewController *addAblum = [main instantiateViewControllerWithIdentifier:@"AddAlbumViewController"];
+//    [self.navigationController pushViewController:addAblum animated:YES];
 //    NSString *forumContent = [_infoDic objectForKey:@"forumContent"];
 //    if (forumContent.length > 0 && forumContent) {
 //        if(![AppShare checkNewForumContent:[_infoDic objectForKey:@"forumContent"]]){

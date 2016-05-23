@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SalingViewController : UIViewController
-
+@property (nonatomic, strong) UIButton *leftBackBtn;
 @end

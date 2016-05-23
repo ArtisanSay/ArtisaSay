@@ -36,6 +36,7 @@
 #import "SalingViewController.h"
 #import "IssueViewController.h"
 #import "MySaleViewController.h"
+
 @interface LogViewController ()<LLTabBarDelegate, UIActionSheetDelegate>
 @property (nonatomic, strong) CDLoginVC *loginVC;
 
@@ -175,13 +176,13 @@
     UIStoryboard *personStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     WJPersonViewController *personViewController = [personStoryboard instantiateViewControllerWithIdentifier:@"Person"];
     
-     UITabBarController *tabbarController = [[UITabBarController alloc] init];
-     tabbarController.viewControllers = @[homeViewController, schoolCityViewController,messageNav, personViewController];
+     _tabbarController = [[UITabBarController alloc] init];
+     _tabbarController.viewControllers = @[homeViewController, schoolCityViewController,messageNav, personViewController];
      
      [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
      [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
      
-     LLTabBar *tabBar = [[LLTabBar alloc] initWithFrame:tabbarController.tabBar.bounds];
+     LLTabBar *tabBar = [[LLTabBar alloc] initWithFrame:_tabbarController.tabBar.bounds];
      
      CGFloat normalButtonWidth = (SCREEN_WIDTH * 3 / 4) / 4;
      CGFloat tabBarHeight = CGRectGetHeight(tabBar.frame);
@@ -192,11 +193,11 @@
      normalImageName:@"home1_35"
      selectedImageName:@"home_35" tabBarItemType:LLTabBarItemNormal];
      LLTabBarItem *sameCityItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth, 0, normalButtonWidth, tabBarHeight)
-     title:@"校内"
+     title:@"校园"
      normalImageName:@"home_37"
      selectedImageName:@"home1_37" tabBarItemType:LLTabBarItemNormal];
      LLTabBarItem *publishItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 2, 0, publishItemWidth, tabBarHeight)
-     title:@"拍卖"
+     title:@"艺拍"
      normalImageName:@"home_32"
      selectedImageName:@"home_32" tabBarItemType:LLTabBarItemRise];
      LLTabBarItem *messageItem = [self tabBarItemWithFrame:CGRectMake(normalButtonWidth * 2 + publishItemWidth, 0, normalButtonWidth, tabBarHeight)
@@ -211,10 +212,10 @@
      tabBar.tabBarItems = @[homeItem, sameCityItem, publishItem, messageItem, mineItem];
      tabBar.delegate = self;
      
-     [tabbarController.tabBar addSubview:tabBar];
+     [_tabbarController.tabBar addSubview:tabBar];
      
      CDAppDelegate *app = [UIApplication sharedApplication].delegate;
-     app.window.rootViewController = tabbarController;
+     app.window.rootViewController = _tabbarController;
 }
 - (LLTabBarItem *)tabBarItemWithFrame:(CGRect)frame title:(NSString *)title normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName tabBarItemType:(LLTabBarItemType)tabBarItemType {
     LLTabBarItem *item = [[LLTabBarItem alloc] initWithFrame:frame];
@@ -246,8 +247,7 @@
     [self presentViewController:regViewController animated:YES completion:nil];
 }
 
-#pragma mark - LLTabBarDelegate
-
+#pragma mark - 跳转到拍卖界面
 - (void)tabBarDidSelectedRiseButton {
     UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Sale" bundle:nil];
     UITabBarController *tabBarController = [sb instantiateViewControllerWithIdentifier:@"Sale"];
@@ -256,7 +256,7 @@
     //背景色
     [[tabBarController tabBar] setBarTintColor:[UIColor blueColor]];
     CDAppDelegate *app = [UIApplication sharedApplication ].delegate;
-    app.window.rootViewController = tabBarController;
+    [app.window.rootViewController presentViewController:tabBarController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

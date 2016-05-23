@@ -20,14 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     _tableView.backgroundColor = [UIColor whiteColor];
     
      self.navigationItem.title=@"拍卖详情";    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19], NSForegroundColorAttributeName:[UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]}];
     self.view.backgroundColor = [UIColor colorWithRed:236/255.0 green:237/255.0 blue:237/255.0 alpha:1];
 
-    
     //右边的btn
     UIButton *rightMessageBtn = [UIButton buttonWithType: UIButtonTypeSystem];
     //[rightMessageBtn addTarget:self action:@selector(other) forControlEvents:UIControlEventTouchUpInside];
@@ -43,7 +41,7 @@
   self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:188/255.0 green:188/255.0 blue:188/255.0 alpha:1];
 
 
-  _scrollArr = @[@"01.png",@"02.png",@"03.png",@"04.png"];
+    _scrollArr = @[@"test000.png",@"test001.png",@"test002.png",@"test003.png"];
 
 }
 

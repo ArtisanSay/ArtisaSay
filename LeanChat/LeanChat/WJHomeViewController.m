@@ -54,6 +54,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
+
 - (IBAction)showPerson:(id)sender {
     WJPersonViewController *personViewController = [[WJPersonViewController alloc] init];
     [self presentViewController:personViewController animated:YES completion:nil];
