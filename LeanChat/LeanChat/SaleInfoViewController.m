@@ -10,6 +10,9 @@
 //#import "NetHelpers.h"
 #import "SDCycleScrollView.h"
 #import "ScrollViewCell.h"
+#import "TitleTableViewCell.h"
+#import "PriceTableViewCell.h"
+#import "InfoTableViewCell.h"
 
 @interface SaleInfoViewController ()<UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate,UIScrollViewDelegate>
 
@@ -20,12 +23,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     _tableView.backgroundColor = [UIColor whiteColor];
     
      self.navigationItem.title=@"拍卖详情";    
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19], NSForegroundColorAttributeName:[UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1]}];
     self.view.backgroundColor = [UIColor colorWithRed:236/255.0 green:237/255.0 blue:237/255.0 alpha:1];
 
+    
     //右边的btn
     UIButton *rightMessageBtn = [UIButton buttonWithType: UIButtonTypeSystem];
     //[rightMessageBtn addTarget:self action:@selector(other) forControlEvents:UIControlEventTouchUpInside];
@@ -41,7 +46,12 @@
   self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:188/255.0 green:188/255.0 blue:188/255.0 alpha:1];
 
 
-    _scrollArr = @[@"test000.png",@"test001.png",@"test002.png",@"test003.png"];
+  _scrollArr = @[@"01.png",@"02.png",@"03.png",@"04.png"];
+    
+    
+    //隐藏tabbar
+    self.tabBarController.tabBar.hidden = YES;
+
 
 }
 
@@ -49,13 +59,25 @@
 
 //对应的行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-        return 1 ;
-  
+    if (section == 0) {
+        return 3;
+    }
+    if (section == 1) {
+        return 1;
+    }
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    if (indexPath.section==0) {
+        if (indexPath.row ==0) {
+            return 200;
+        }
+    }
+    if (indexPath.section ==1) {
+        return 150;
+    }
+    return 100;
 }
 
 //cell
@@ -63,7 +85,7 @@
     UITableViewCell *cell = nil;
     if (indexPath.section ==0) {
         if (indexPath.row == 0) {
-            ScrollViewCell *theCell=[tableView dequeueReusableCellWithIdentifier:@"ScrollViewCell" forIndexPath:indexPath];
+            ScrollViewCell *theCell=[tableView dequeueReusableCellWithIdentifier:@"ScrollViewCell"];
             
             
             NSMutableArray *array=[[NSMutableArray alloc]init];
@@ -73,7 +95,7 @@
                 [array addObject:_scrollArr[i]];
                 
             }
-           SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:theCell.bounds imageNamesGroup:array];
+           SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:theCell.contentView.bounds imageNamesGroup:array];
             //加载网络图片
 //             SDCycleScrollView *cycleScrollView=[SDCycleScrollView cycleScrollViewWithFrame:theCell.bounds delegate:self placeholderImage:nil];
 //            cycleScrollView.imageURLStringsGroup=array;
@@ -82,20 +104,31 @@
             cycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentCenter;
             cycleScrollView.currentPageDotColor=[UIColor whiteColor];
             [theCell.contentView addSubview:cycleScrollView];
-            theCell.backgroundColor = [UIColor redColor];
             return theCell;
 
         }
+        if (indexPath.row == 1) {
+            TitleTableViewCell *titleCell = [tableView dequeueReusableCellWithIdentifier:@"titleCell" forIndexPath:indexPath];
+            return titleCell;
+        }
+        if (indexPath.row == 2) {
+            PriceTableViewCell *priceCell = [tableView dequeueReusableCellWithIdentifier:@"priceCell" forIndexPath:indexPath];
+            return priceCell;
+        }
+    }
+    if (indexPath.section ==1) {
+        InfoTableViewCell *infoCell = [tableView dequeueReusableCellWithIdentifier:@"infoCell" forIndexPath:indexPath];
+        return infoCell;
     }
     
-    [_tableView reloadData];
+       [_tableView reloadData];
     return cell;
 }
 
 //区数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 1;
+    return 2;
 }
 
 //区高
@@ -105,7 +138,7 @@
         return 0;
     }
   
-    return 0;
+    return 20;
     
 }
 
