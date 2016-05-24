@@ -17,11 +17,6 @@
 		1809EC331CEEEF0A0019ED67 /* test001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC2F1CEEEF0A0019ED67 /* test001.png */; };
 		1809EC341CEEEF0A0019ED67 /* test002.png in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC301CEEEF0A0019ED67 /* test002.png */; };
 		1809EC351CEEEF0A0019ED67 /* test003.png in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC311CEEEF0A0019ED67 /* test003.png */; };
-		1809EC3D1CEF211C0019ED67 /* SaleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809EC3B1CEF211C0019ED67 /* SaleInfoViewController.m */; };
-		1809EC3E1CEF211C0019ED67 /* SaleInform.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC3C1CEF211C0019ED67 /* SaleInform.storyboard */; };
-		1809EC411CEF212A0019ED67 /* ScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809EC401CEF212A0019ED67 /* ScrollViewCell.m */; };
-		1809EC461CEF21530019ED67 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1809EC441CEF21530019ED67 /* IssueViewController.m */; };
-		1809EC471CEF21530019ED67 /* IssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1809EC451CEF21530019ED67 /* IssueViewController.xib */; };
 		1816D50E1CF19ACB0060717A /* AddAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816D50D1CF19ACB0060717A /* AddAlbumViewController.m */; };
 		181BED481CEAB8FF00B87350 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 181BED401CEAB8FF00B87350 /* noticeMusic.wav */; };
 		181BED491CEAB8FF00B87350 /* lightNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 181BED411CEAB8FF00B87350 /* lightNormal.png */; };
@@ -60,6 +55,18 @@
 		18A729B51CE9C960002103CF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A729B41CE9C960002103CF /* Launch Screen.storyboard */; };
 		18AC378B1CF2F01F00678D20 /* WJSchoolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC37891CF2F01F00678D20 /* WJSchoolTableViewCell.m */; };
 		18AC378C1CF2F01F00678D20 /* WJSchoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AC378A1CF2F01F00678D20 /* WJSchoolTableViewCell.xib */; };
+		18AC37941CF30D2F00678D20 /* SaleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC378F1CF30D2F00678D20 /* SaleInfoViewController.m */; };
+		18AC37951CF30D2F00678D20 /* SaleInform.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37901CF30D2F00678D20 /* SaleInform.storyboard */; };
+		18AC37961CF30D2F00678D20 /* IssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC37921CF30D2F00678D20 /* IssueViewController.m */; };
+		18AC37971CF30D2F00678D20 /* IssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37931CF30D2F00678D20 /* IssueViewController.xib */; };
+		18AC37A01CF30D3900678D20 /* ScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC37991CF30D3900678D20 /* ScrollViewCell.m */; };
+		18AC37A11CF30D3900678D20 /* TitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC379B1CF30D3900678D20 /* TitleTableViewCell.m */; };
+		18AC37A21CF30D3900678D20 /* PriceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC379D1CF30D3900678D20 /* PriceTableViewCell.m */; };
+		18AC37A31CF30D3900678D20 /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC379F1CF30D3900678D20 /* InfoTableViewCell.m */; };
+		18AC37A91CF30DAC00678D20 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37A51CF30DAC00678D20 /* 01.png */; };
+		18AC37AA1CF30DAC00678D20 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37A61CF30DAC00678D20 /* 02.png */; };
+		18AC37AB1CF30DAC00678D20 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37A71CF30DAC00678D20 /* 03.png */; };
+		18AC37AC1CF30DAC00678D20 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC37A81CF30DAC00678D20 /* 04.png */; };
 		18B814B81CED6D2F00240826 /* SalingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814B61CED6D2F00240826 /* SalingViewController.m */; };
 		18B814B91CED6D2F00240826 /* SalingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B814B71CED6D2F00240826 /* SalingViewController.xib */; };
 		18B814BD1CED6E0100240826 /* MySaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B814BB1CED6E0100240826 /* MySaleViewController.m */; };
@@ -205,14 +212,6 @@
 		1809EC2F1CEEEF0A0019ED67 /* test001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test001.png; sourceTree = "<group>"; };
 		1809EC301CEEEF0A0019ED67 /* test002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test002.png; sourceTree = "<group>"; };
 		1809EC311CEEEF0A0019ED67 /* test003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test003.png; sourceTree = "<group>"; };
-		1809EC3A1CEF211C0019ED67 /* SaleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleInfoViewController.h; sourceTree = "<group>"; };
-		1809EC3B1CEF211C0019ED67 /* SaleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleInfoViewController.m; sourceTree = "<group>"; };
-		1809EC3C1CEF211C0019ED67 /* SaleInform.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SaleInform.storyboard; sourceTree = "<group>"; };
-		1809EC3F1CEF212A0019ED67 /* ScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewCell.h; sourceTree = "<group>"; };
-		1809EC401CEF212A0019ED67 /* ScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCell.m; sourceTree = "<group>"; };
-		1809EC431CEF21530019ED67 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
-		1809EC441CEF21530019ED67 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
-		1809EC451CEF21530019ED67 /* IssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueViewController.xib; sourceTree = "<group>"; };
 		1816D50C1CF19ACB0060717A /* AddAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlbumViewController.h; sourceTree = "<group>"; };
 		1816D50D1CF19ACB0060717A /* AddAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlbumViewController.m; sourceTree = "<group>"; };
 		181BED401CEAB8FF00B87350 /* noticeMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noticeMusic.wav; sourceTree = "<group>"; };
@@ -265,6 +264,24 @@
 		18AC37881CF2F01F00678D20 /* WJSchoolTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJSchoolTableViewCell.h; sourceTree = "<group>"; };
 		18AC37891CF2F01F00678D20 /* WJSchoolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJSchoolTableViewCell.m; sourceTree = "<group>"; };
 		18AC378A1CF2F01F00678D20 /* WJSchoolTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSchoolTableViewCell.xib; sourceTree = "<group>"; };
+		18AC378E1CF30D2F00678D20 /* SaleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleInfoViewController.h; sourceTree = "<group>"; };
+		18AC378F1CF30D2F00678D20 /* SaleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleInfoViewController.m; sourceTree = "<group>"; };
+		18AC37901CF30D2F00678D20 /* SaleInform.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SaleInform.storyboard; sourceTree = "<group>"; };
+		18AC37911CF30D2F00678D20 /* IssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueViewController.h; sourceTree = "<group>"; };
+		18AC37921CF30D2F00678D20 /* IssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueViewController.m; sourceTree = "<group>"; };
+		18AC37931CF30D2F00678D20 /* IssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueViewController.xib; sourceTree = "<group>"; };
+		18AC37981CF30D3900678D20 /* ScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewCell.h; sourceTree = "<group>"; };
+		18AC37991CF30D3900678D20 /* ScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCell.m; sourceTree = "<group>"; };
+		18AC379A1CF30D3900678D20 /* TitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleTableViewCell.h; sourceTree = "<group>"; };
+		18AC379B1CF30D3900678D20 /* TitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTableViewCell.m; sourceTree = "<group>"; };
+		18AC379C1CF30D3900678D20 /* PriceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceTableViewCell.h; sourceTree = "<group>"; };
+		18AC379D1CF30D3900678D20 /* PriceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceTableViewCell.m; sourceTree = "<group>"; };
+		18AC379E1CF30D3900678D20 /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		18AC379F1CF30D3900678D20 /* InfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		18AC37A51CF30DAC00678D20 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		18AC37A61CF30DAC00678D20 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		18AC37A71CF30DAC00678D20 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		18AC37A81CF30DAC00678D20 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
 		18B814B51CED6D2F00240826 /* SalingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalingViewController.h; sourceTree = "<group>"; };
 		18B814B61CED6D2F00240826 /* SalingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalingViewController.m; sourceTree = "<group>"; };
 		18B814B71CED6D2F00240826 /* SalingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalingViewController.xib; sourceTree = "<group>"; };
@@ -521,12 +538,13 @@
 		1809EC381CEF20920019ED67 /* HJSale */ = {
 			isa = PBXGroup;
 			children = (
-				1809EC3A1CEF211C0019ED67 /* SaleInfoViewController.h */,
-				1809EC3B1CEF211C0019ED67 /* SaleInfoViewController.m */,
-				1809EC3C1CEF211C0019ED67 /* SaleInform.storyboard */,
-				1809EC431CEF21530019ED67 /* IssueViewController.h */,
-				1809EC441CEF21530019ED67 /* IssueViewController.m */,
-				1809EC451CEF21530019ED67 /* IssueViewController.xib */,
+				18AC37A41CF30D9B00678D20 /* HJImage */,
+				18AC378E1CF30D2F00678D20 /* SaleInfoViewController.h */,
+				18AC378F1CF30D2F00678D20 /* SaleInfoViewController.m */,
+				18AC37901CF30D2F00678D20 /* SaleInform.storyboard */,
+				18AC37911CF30D2F00678D20 /* IssueViewController.h */,
+				18AC37921CF30D2F00678D20 /* IssueViewController.m */,
+				18AC37931CF30D2F00678D20 /* IssueViewController.xib */,
 				1809EC421CEF212F0019ED67 /* InfoView */,
 			);
 			name = HJSale;
@@ -545,8 +563,14 @@
 		1809EC421CEF212F0019ED67 /* InfoView */ = {
 			isa = PBXGroup;
 			children = (
-				1809EC3F1CEF212A0019ED67 /* ScrollViewCell.h */,
-				1809EC401CEF212A0019ED67 /* ScrollViewCell.m */,
+				18AC37981CF30D3900678D20 /* ScrollViewCell.h */,
+				18AC37991CF30D3900678D20 /* ScrollViewCell.m */,
+				18AC379A1CF30D3900678D20 /* TitleTableViewCell.h */,
+				18AC379B1CF30D3900678D20 /* TitleTableViewCell.m */,
+				18AC379C1CF30D3900678D20 /* PriceTableViewCell.h */,
+				18AC379D1CF30D3900678D20 /* PriceTableViewCell.m */,
+				18AC379E1CF30D3900678D20 /* InfoTableViewCell.h */,
+				18AC379F1CF30D3900678D20 /* InfoTableViewCell.m */,
 			);
 			name = InfoView;
 			sourceTree = "<group>";
@@ -558,7 +582,7 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
-		181BED3E1CEAB8E300B87350 /* ErweimaScan */ = {
+		181BED3E1CEAB8E300B87350 /* QRcode */ = {
 			isa = PBXGroup;
 			children = (
 				181BED4F1CEAB92E00B87350 /* lhScanQCodeViewController.h */,
@@ -572,7 +596,7 @@
 				181BED461CEAB8FF00B87350 /* QRCodeReaderView.h */,
 				181BED471CEAB8FF00B87350 /* QRCodeReaderView.m */,
 			);
-			name = ErweimaScan;
+			name = QRcode;
 			sourceTree = "<group>";
 		};
 		181BED611CEAF87D00B87350 /* HJLearnChat */ = {
@@ -602,6 +626,17 @@
 				1809EC311CEEEF0A0019ED67 /* test003.png */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		18AC37A41CF30D9B00678D20 /* HJImage */ = {
+			isa = PBXGroup;
+			children = (
+				18AC37A51CF30DAC00678D20 /* 01.png */,
+				18AC37A61CF30DAC00678D20 /* 02.png */,
+				18AC37A71CF30DAC00678D20 /* 03.png */,
+				18AC37A81CF30DAC00678D20 /* 04.png */,
+			);
+			name = HJImage;
 			sourceTree = "<group>";
 		};
 		18E50F781CEAAAC00020BB7F /* View */ = {
@@ -859,7 +894,7 @@
 				18A729061CE9C74B002103CF /* Main.storyboard */,
 				18F13C2A1CEDB6AF0054D73D /* Sale.storyboard */,
 				1816D5061CF18FAB0060717A /* Helper */,
-				181BED3E1CEAB8E300B87350 /* ErweimaScan */,
+				181BED3E1CEAB8E300B87350 /* QRcode */,
 				18E510011CEAADC60020BB7F /* LogAndReg */,
 				18E50FD21CEAAC590020BB7F /* ViewController */,
 				18E50F951CEAAB8E0020BB7F /* WJImagePickerController */,
@@ -1189,12 +1224,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AC37AA1CF30DAC00678D20 /* 02.png in Resources */,
 				7073FCB31B14718C006F2692 /* CDConvNameVC.xib in Resources */,
 				18E50FB51CEAABCA0020BB7F /* TZAssetCell.xib in Resources */,
 				18A729B51CE9C960002103CF /* Launch Screen.storyboard in Resources */,
 				18E50FA91CEAABCA0020BB7F /* navi_back@2x.png in Resources */,
 				181BED4D1CEAB8FF00B87350 /* scanscanBg.png in Resources */,
 				18A729011CE9C742002103CF /* guide1.jpg in Resources */,
+				18AC37951CF30D2F00678D20 /* SaleInform.storyboard in Resources */,
+				18AC37AC1CF30DAC00678D20 /* 04.png in Resources */,
 				18E50FB01CEAABCA0020BB7F /* photo_sel_previewVc@2x.png in Resources */,
 				18E50F871CEAAAD30020BB7F /* WJHomeTableViewCell.xib in Resources */,
 				7073FCBB1B14718C006F2692 /* CDAddFriendVC.xib in Resources */,
@@ -1213,8 +1251,9 @@
 				18A729031CE9C742002103CF /* guide3.jpg in Resources */,
 				18B814B91CED6D2F00240826 /* SalingViewController.xib in Resources */,
 				1809EC341CEEEF0A0019ED67 /* test002.png in Resources */,
-				1809EC3E1CEF211C0019ED67 /* SaleInform.storyboard in Resources */,
 				18E50FAC1CEAABCA0020BB7F /* photo_number_icon@2x.png in Resources */,
+				18AC37A91CF30DAC00678D20 /* 01.png in Resources */,
+				18AC37AB1CF30DAC00678D20 /* 03.png in Resources */,
 				1809EC281CEEBFBF0019ED67 /* WJSaleSortCell.xib in Resources */,
 				18A728FE1CE9C742002103CF /* icon.png in Resources */,
 				18E50FB61CEAABCA0020BB7F /* VideoSendIcon@2x.png in Resources */,
@@ -1229,6 +1268,7 @@
 				181BED571CEAEED100B87350 /* NewForumLocationCell.xib in Resources */,
 				18A729021CE9C742002103CF /* guide2.jpg in Resources */,
 				18E50FFC1CEAAD350020BB7F /* WJMessageViewController.xib in Resources */,
+				18AC37971CF30D2F00678D20 /* IssueViewController.xib in Resources */,
 				181BED491CEAB8FF00B87350 /* lightNormal.png in Resources */,
 				18E50FB11CEAABCA0020BB7F /* preview_number_icon@2x.png in Resources */,
 				18A729201CE9C803002103CF /* RegOneViewController.xib in Resources */,
@@ -1244,7 +1284,6 @@
 				18A729221CE9C803002103CF /* LogViewController.xib in Resources */,
 				18E50FAA1CEAABCA0020BB7F /* photo_def_photoPickerVc@2x.png in Resources */,
 				18E50FF01CEAACFD0020BB7F /* WJSchoolViewController.xib in Resources */,
-				1809EC471CEF21530019ED67 /* IssueViewController.xib in Resources */,
 				18E50FE91CEAACDA0020BB7F /* WJHomeViewController.xib in Resources */,
 				18A728FF1CE9C742002103CF /* Log1.png in Resources */,
 				1809EC221CEEBF9E0019ED67 /* WJSaleScrollViewCell.xib in Resources */,
@@ -1335,7 +1374,6 @@
 				181BED561CEAEED100B87350 /* NewForumLocationCell.m in Sources */,
 				18E50FCA1CEAABDD0020BB7F /* TZAssetModel.m in Sources */,
 				18A729251CE9C803002103CF /* RetrievePswViewController.m in Sources */,
-				1809EC3D1CEF211C0019ED67 /* SaleInfoViewController.m in Sources */,
 				7073FCD71B14718C006F2692 /* CDResizableButton.m in Sources */,
 				18A7291F1CE9C803002103CF /* RegOneViewController.m in Sources */,
 				7087E77E1B78BF34003641E2 /* CDEntryBaseVC.m in Sources */,
@@ -1360,6 +1398,9 @@
 				18E50FD01CEAABDD0020BB7F /* TZVideoPlayerController.m in Sources */,
 				18AC378B1CF2F01F00678D20 /* WJSchoolTableViewCell.m in Sources */,
 				18E50FE11CEAACC20020BB7F /* LLTabBarItem.m in Sources */,
+				18AC37A01CF30D3900678D20 /* ScrollViewCell.m in Sources */,
+				18AC37961CF30D2F00678D20 /* IssueViewController.m in Sources */,
+				18AC37941CF30D2F00678D20 /* SaleInfoViewController.m in Sources */,
 				18E50F841CEAAAD30020BB7F /* NewForumImagesCell.m in Sources */,
 				7073FCC11B14718C006F2692 /* CDUserInfoVC.m in Sources */,
 				7087E7771B78B39A003641E2 /* CDPhoneRegisterVC.m in Sources */,
@@ -1367,6 +1408,7 @@
 				70DC7DB51B2F531F0047B7AB /* CDUtils.m in Sources */,
 				18B814BD1CED6E0100240826 /* MySaleViewController.m in Sources */,
 				7073FCC21B14718C006F2692 /* AVIMCustomMessage.m in Sources */,
+				18AC37A11CF30D3900678D20 /* TitleTableViewCell.m in Sources */,
 				1809EC211CEEBF9E0019ED67 /* WJSaleScrollViewCell.m in Sources */,
 				7073FCA91B14718C006F2692 /* CDBaseNavC.m in Sources */,
 				18B814B81CED6D2F00240826 /* SalingViewController.m in Sources */,
@@ -1382,7 +1424,7 @@
 				700E6A151B3D2B4E00675021 /* LZPushManager.m in Sources */,
 				7073FCD01B14718C006F2692 /* CDImageLabelTableCell.m in Sources */,
 				7073FCBF1B14718C006F2692 /* CDProfileVC.m in Sources */,
-				1809EC411CEF212A0019ED67 /* ScrollViewCell.m in Sources */,
+				18AC37A21CF30D3900678D20 /* PriceTableViewCell.m in Sources */,
 				18E50FE81CEAACDA0020BB7F /* WJHomeViewController.m in Sources */,
 				7073FCB51B14718C006F2692 /* CDGroupedConvListVC.m in Sources */,
 				7073FCB41B14718C006F2692 /* CDConvReportAbuseVC.m in Sources */,
@@ -1405,6 +1447,7 @@
 				18E50FCC1CEAABDD0020BB7F /* TZImagePickerController.m in Sources */,
 				7073FCD61B14718C006F2692 /* CDPopMenuItemCell.m in Sources */,
 				7073FCBA1B14718C006F2692 /* CDAddFriendVC.m in Sources */,
+				18AC37A31CF30D3900678D20 /* InfoTableViewCell.m in Sources */,
 				18E510001CEAAD4C0020BB7F /* WJPersonViewController.m in Sources */,
 				7073FCB11B14718C006F2692 /* CDConvDetailVC.m in Sources */,
 				9AD85BB91C21666B006A35C1 /* CYLTabBarControllerConfig.m in Sources */,
@@ -1416,7 +1459,6 @@
 				18E50FCE1CEAABDD0020BB7F /* TZPhotoPreviewCell.m in Sources */,
 				7073FCAF1B14718C006F2692 /* CDConvsVC.m in Sources */,
 				181BED511CEAB92E00B87350 /* lhScanQCodeViewController.m in Sources */,
-				1809EC461CEF21530019ED67 /* IssueViewController.m in Sources */,
 				18A729231CE9C803002103CF /* RegViewController.m in Sources */,
 				18E50FC91CEAABDD0020BB7F /* TZAssetCell.m in Sources */,
 				18A729271CE9C803002103CF /* AlertPswViewController.m in Sources */,

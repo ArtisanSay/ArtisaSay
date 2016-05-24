@@ -51,7 +51,7 @@
     
     //隐藏tabbar
     self.tabBarController.tabBar.hidden = YES;
-
+    //[_tableView reloadData];
 
 }
 
@@ -71,7 +71,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==0) {
         if (indexPath.row ==0) {
-            return 200;
+            return 150;
+        }else{
+            return  100;
         }
     }
     if (indexPath.section ==1) {
@@ -85,7 +87,7 @@
     UITableViewCell *cell = nil;
     if (indexPath.section ==0) {
         if (indexPath.row == 0) {
-            ScrollViewCell *theCell=[tableView dequeueReusableCellWithIdentifier:@"ScrollViewCell"];
+            ScrollViewCell *theCell=[tableView dequeueReusableCellWithIdentifier:@"scrollViewCell"];
             
             
             NSMutableArray *array=[[NSMutableArray alloc]init];
@@ -95,12 +97,12 @@
                 [array addObject:_scrollArr[i]];
                 
             }
-           SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:theCell.contentView.bounds imageNamesGroup:array];
+//           SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:theCell.bounds imageNamesGroup:array];
             //加载网络图片
-//             SDCycleScrollView *cycleScrollView=[SDCycleScrollView cycleScrollViewWithFrame:theCell.bounds delegate:self placeholderImage:nil];
-//            cycleScrollView.imageURLStringsGroup=array;
-            //cycleScrollView.localizationImageNamesGroup = array;
-            
+        SDCycleScrollView *cycleScrollView=[SDCycleScrollView cycleScrollViewWithFrame:theCell.bounds delegate:self placeholderImage:nil];
+            cycleScrollView.imageURLStringsGroup=array;
+            cycleScrollView.localizationImageNamesGroup = array;
+            cycleScrollView.backgroundColor =[UIColor redColor];
             cycleScrollView.pageControlAliment=SDCycleScrollViewPageContolAlimentCenter;
             cycleScrollView.currentPageDotColor=[UIColor whiteColor];
             [theCell.contentView addSubview:cycleScrollView];
